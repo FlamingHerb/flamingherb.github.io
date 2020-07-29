@@ -52,18 +52,45 @@
 </head>
 <body>
 	<main class="container">
-		<center><img src="https://avatars2.githubusercontent.com/u/55610651?s=400&u=c55a0495ea80e0b0dd35366c209595f3bba3a757&v=4"></center>
+		<center><a href="https://github.com/FlamingHerb" class="tooltipper" title="Go to my Github user page."><img src="https://avatars2.githubusercontent.com/u/55610651?s=400&u=c55a0495ea80e0b0dd35366c209595f3bba3a757&v=4"></a></center>
 		<h1 class="text-center">Flaming Herb | Vaccaria's Repo</h1>
 		<p class="text-center font-italic">Just a place for some stuff to put into.</p>
+		<div id="social-media" class="text-center">
+			<a href="https://twitter.com/Omisol_Vacc?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Omisol_Vacc</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
 		<hr>
 		<div class="text-center">
-			<a href="rulebook.html" class="tooltipper" title="For rulebook.">Rulebook</a>
+			<div class="row">
+			  <div class="col-4">
+			    <div class="list-group" id="list-tab" role="tablist">
+			      <a class="list-group-item list-group-item-action active" id="list-rulebook" data-toggle="list" href="#list-rules" role="tab" aria-controls="home">Holo_world Rule book</a>
+			      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+			      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+			    </div>
+			  </div>
+			  <div class="col-8">
+			    <div class="tab-content" id="nav-tabContent">
+			      <div class="tab-pane fade show active" id="list-rules" role="tabpanel" aria-labelledby="list-rulebook">
+			      	<a href="rulebook.html"><img class="img-fluid" src="https://cdn.discordapp.com/attachments/405015631365144587/737902844828712980/repository-open-graph-template.png"></a>
+			      </div>
+			      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+			      	<img class="img-fluid" src="img/repository-codex.png">
+			      </div>
+			      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+			      	
+			      </div>
+			    </div>
+			  </div>
+			</div>
 		</div>
 			
 		
 		
 
 	</main>
+	<footer class="text-center">
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+	</footer>
 	<script>
         $(document).ready(function() {
             $('.tooltipper').tooltipster({
