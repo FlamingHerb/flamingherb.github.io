@@ -26,10 +26,64 @@
 	<link rel="icon" href="/favicon.ico?" type="image/x-icon">
 	<link rel="shortcut icon" href="/favicon.ico?" type="image/ico">
 
+
+	<!-- Imported CS stuff -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" integrity="sha512-awOgwBW6XldbPsuzBfoPhbi48OkYKn+TmMVwqD75MPrWnLvA6LN98sWdE4Jl17G4FHIyp8k/jFM9tfiGE8qFyw==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css" integrity="sha512-/sYaNfa9isp6Y7KDiKHOzs7EZlAjAkIMjAClFeWWl1rG6VFv0GmyksKHwyQmmLnYr3ELIewYIH9oHXXBZwZlyA==" crossorigin="anonymous" />
+
+ 	<!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+	<!-- Scripts -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+	
+	<!-- Imported stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js" integrity="sha512-vgY1+uleaxFEkXfUFLiXB5udry+v5uCvFeuqUn4CUkWbAtUl5TqAyDu4XhdATzdJ7CbXxbonHS8UWsEc0D8TDw==" crossorigin="anonymous"></script>
+
+
+
+ 	<!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/bc51f44e82.js" crossorigin="anonymous"></script>
+
+    
+    
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="styles/navbar-fixed-right.min.css">
+	<link rel="stylesheet" href="styles/navbar-fixed-left.min.css">
+
+
 </head>
 <body>
-	<iframe src="rulebook/rulebook.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" style="position: absolute; top: 0; right: 0; bottom: 0: left: 0;">
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-left">
+	    <a class="navbar-brand" href="">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
+
+	    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	        <ul class="navbar-nav">
+	            <li class="nav-item">
+	                <a class="nav-link" href="/">Home</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="about.html">About</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" href="contact.html">Contact</a>
+	            </li>
+	        </ul>
+	       
+	    </div>
+	</nav>
+	<div class="container" style="margin-right: 0px;">
+		<iframe src="rulebook/rulebook.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%" style="background-color: #add8e6;position: absolute; top: 0;right: 0; bottom: 0: left: 0;">
 		This browser does not support PDFs. Please download the PDF to view it: Download PDF
-	</iframe>
+		</iframe>
+	</div>
+	
 </body>
 </html>
