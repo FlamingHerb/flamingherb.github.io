@@ -8,6 +8,7 @@ $(window).scroll(function(){
 });
 
 $(function(){
-    $("#includedContent").load("index.html");
+    $("#navbar").load("navbar.html");
+    $("#footer").load("footer.html");
     console.log("complete");
 });
