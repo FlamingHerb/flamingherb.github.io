@@ -5,4 +5,9 @@ $(window).scroll(function(){
   }else{
     $('nav').removeClass('animate');
   }
-})
+});
+
+$(function(){
+    $("#includedContent").load("index.html");
+    console.log("complete");
+});
