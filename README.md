@@ -1,2 +1,1 @@
-# Holo_world Rules Book
-A website repository for Holo_world's Rulebook
+# THIS REPOSITORY IS NOW CLOSED FOR ARCHIVING PURPOSES
