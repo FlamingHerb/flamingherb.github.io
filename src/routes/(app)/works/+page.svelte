@@ -33,7 +33,6 @@
 </div>
 
 <style lang="scss">
-    @import "../node_modules/rfs/scss";
 
     figure {
         margin: 0;
@@ -54,7 +53,7 @@
     h1 {
         display: block;
         margin-bottom: 0;
-        @include font-size(1.8rem);
+        font-size: 1.8rem;
         font-family: 'Segoe UI', Helvetica, sans-serif;
         font-weight: normal;
     }
@@ -71,14 +70,14 @@
 
         h1 {
             margin-top: 0.25em;
-            @include font-size(1.2rem);
+            font-size: 1.2rem;
 
             a {
                 text-decoration: none;
             }
         }
         p {
-            @include font-size(0.75rem);
+            font-size: 0.75rem;
         }
 
         .description{

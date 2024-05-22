@@ -62,8 +62,6 @@
 
 
 <style lang="scss">
-  @import "../node_modules/rfs/scss";
-  
 
   /* Local Styles */
 
@@ -107,7 +105,7 @@
 
     a {
       text-align: center;
-      @include font-size(1.25rem);
+      font-size: 1.25rem;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: bold;
       text-decoration: none;
@@ -157,7 +155,7 @@
 
     font-weight: bold;
 
-    @include font-size(3.5rem);
+    font-size: 3.5rem;
   }
 
   #tagline {
@@ -167,7 +165,7 @@
     //margin-left: 1.6em;
     font-style: italic;
 
-    @include font-size(0.8rem);
+    font-size: 0.8rem;
   }
 
   

@@ -27,7 +27,6 @@
 </div>
 
 <style lang="scss">
-    @import "../node_modules/rfs/scss";
 
     #left-side {
         width: 600px;
@@ -43,7 +42,7 @@
     .section {
         padding: 14px;
         p {
-            @include font-size(1rem);
+            font-size: 1rem;
         }
     }
 
@@ -55,7 +54,7 @@
     }
 
     .under-construction {
-        @include font-size(2rem);
+        font-size: 2rem;
     }
     
     @media only screen and (max-width: 976px) {

@@ -39,7 +39,6 @@
 </div>
 
 <style lang="scss">
-    @import "../node_modules/rfs/scss";
 
     h1 {
         display: block;
@@ -57,12 +56,12 @@
         figcaption {
             margin:auto;
             text-align: center;
-            @include font-size(0.6rem);
+            font-size: 0.6rem;
         }
     }
 
     h1 {
-        @include font-size(1.8rem);
+        font-size: 1.8rem;
         font-family: 'Segoe UI', Helvetica, sans-serif;
         font-weight: normal;
     }
@@ -76,7 +75,7 @@
         margin-right: 1.2em;
 
         p {
-            @include font-size(1rem);
+            font-size: 1rem;
         }
     }
 </style>

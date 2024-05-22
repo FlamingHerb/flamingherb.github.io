@@ -72,8 +72,6 @@
 </center>
 
 <style lang="scss">
-    @import "../node_modules/rfs/scss";
-
     @font-face {
         font-family: 'DFLiSong Std W7';
         font-style: normal;
