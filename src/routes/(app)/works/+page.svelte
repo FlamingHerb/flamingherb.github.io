@@ -7,6 +7,13 @@
     <h1>GAMES</h1>
     <div class="mini-container row-direction">
         <figure>
+            <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch 2 Poster">
+            <figcaption>
+              <strong>-repent loci- useless apologies of a troublesome witch 2</strong><br />
+              <span>(TBD)</span>
+            </figcaption>
+        </figure>
+        <figure>
             <img class="poster" src="images/works_poster/pu.png" alt="Sweet Evil Fantasy Poster">
             <figcaption>
               <strong>Sweet Evil Fantasy</strong><br />
@@ -52,6 +59,13 @@
     <h1>WORKS</h1>
     <div class="mini-container row-direction">
         <figure>
+            <img class="poster" src="images/works_poster/mtgr.png" alt="Dev8 Website">
+            <figcaption>
+              <strong>Dev8 Website</strong><br />
+              <span>(2024)</span>
+            </figcaption>
+        </figure>
+        <figure>
             <img class="poster" src="images/works_poster/mtgr.png" alt="Filipino Student Employability Predictor Poster">
             <figcaption>
               <strong>Filipino Student Employability Predictor</strong><br />
@@ -61,7 +75,7 @@
         <figure>
             <img class="poster" src="images/works_poster/mtgr.png" alt="Multithreaded GREP Runner Poster">
             <figcaption>
-            <strong>Multithreaded GREP Runner</strong><br />
+              <strong>Multithreaded GREP Runner</strong><br />
               <span>(2024)</span>
             </figcaption>
        </figure>
