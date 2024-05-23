@@ -7,28 +7,64 @@
     <h1>GAMES</h1>
     <div class="mini-container row-direction">
         <figure>
+            <img class="poster" src="images/works_poster/pu.png" alt="Sweet Evil Fantasy Poster">
+            <figcaption>
+              <strong>Sweet Evil Fantasy</strong><br />
+              <span>(TBD)</span>
+            </figcaption>
+        </figure>
+        <figure>
             <img class="poster" src="images/works_poster/pu.png" alt="Project Unity Poster">
-            <figcaption><strong>Project Unity</strong> (TBD)</figcaption>
+            <figcaption>
+              <strong>Project Privacy</strong><br />
+              <span>(2024)</span>
+            </figcaption>
+        </figure>
+         <figure>
+            <img class="poster" src="images/works_poster/pu.png" alt="Project Unity Poster">
+            <figcaption>
+              <strong>Project Unity</strong><br />
+              <span>(2024)</span>
+            </figcaption>
         </figure>
         <figure>
             <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch Poster">
-            <figcaption><strong>-repent loci- Useless Apologies of a Troublesome Witch</strong> (2020)</figcaption>
+            <figcaption>
+              <strong>-repent loci- useless apologies of a troublesome witch</strong><br />
+              <span>(2020)</span>
+            </figcaption>
         </figure>
         <figure>
             <img class="poster" src="images/works_poster/sing.png" alt="Sa Ilalim ng Gabi Poster">
-            <figcaption><strong>Sa Ilalim ng Gabi</strong> (2020)</figcaption>
-        </figure>
+            <figcaption>
+              <strong>Sa Ilalim ng Gabi</strong><br />
+              <span>(2020)</span>
+            </figcaption>
+       </figure>
         <figure>
             <img class="poster" src="images/works_poster/tsw.png" alt="The Swallow's Descent Poster">
-            <figcaption><strong>The Swallow's Descent</strong> (2016)</figcaption>
+            <figcaption>
+              <strong>The Swallow's Descent</strong><br />
+              <span>(2016)</span>
+            </figcaption>
         </figure>
     </div>
     <h1>WORKS</h1>
     <div class="mini-container row-direction">
         <figure>
-            <img class="poster" src="images/works_poster/mtgr.png" alt="Project Unity Poster">
-            <figcaption><strong>Multithreaded GREP Runner</strong> (2023)</figcaption>
+            <img class="poster" src="images/works_poster/mtgr.png" alt="Filipino Student Employability Predictor Poster">
+            <figcaption>
+              <strong>Filipino Student Employability Predictor</strong><br />
+              <span>(2024)</span>
+            </figcaption>
         </figure>
+        <figure>
+            <img class="poster" src="images/works_poster/mtgr.png" alt="Multithreaded GREP Runner Poster">
+            <figcaption>
+            <strong>Multithreaded GREP Runner</strong><br />
+              <span>(2024)</span>
+            </figcaption>
+       </figure>
     </div>
 </div>
 
