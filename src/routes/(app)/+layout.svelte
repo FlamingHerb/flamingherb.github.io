@@ -23,6 +23,7 @@
 </script>
 
 <svelte:window bind:innerWidth />
+<!-- 
 <div class="local-header">
   
   <div class="header">
@@ -46,21 +47,21 @@
         <p id="tagline">{tagline}</p>
       </div>
     </div>
-    <!-- <img id="logo" src="/images/fa.webp" alt="segs"> -->
+    <img id="logo" src="/images/fa.webp" alt="segs">
   </div>
   <div class="nav">
     <a class="{$page.route.id === '/' ? 'current' : ''}" href="/">HOME</a>
     <a class="{$page.route.id === '/works' ? 'current' : ''}" href="/works">WORKS</a>
-    <!-- <a class="{$page.route.id === '/blog' ? 'current' : ''}" href="/blog">BLOG</a> -->
+    <a class="{$page.route.id === '/blog' ? 'current' : ''}" href="/blog">BLOG</a>
     <a class="{$page.route.id === '/aboutme' ? 'current' : ''}" href="/aboutme">ABOUT ME</a>
     <a class="{$page.route.id === '/contact' ? 'current' : ''}" href="/contact">CONTACT ME</a>
   </div>
 
 </div>
-
+-->
 <slot />
 
-
+    @import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 <style lang="scss">
 
   /* Local Styles */
