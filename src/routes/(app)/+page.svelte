@@ -10,7 +10,9 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
-        <h1 class="title-holder">I'm Michael Sean Brian B. Omisol!</h1>
+        <h2 class="title-holder">Hi, I'm...</h2>
+        <h1 class="title-holder">Michael Omisol!</h1>
+        
     </div>
 </div>
 
@@ -44,10 +46,17 @@
         font-size: 2rem;
     }
     
-    @media only screen and (max-width: 976px) {
     .title-holder {
+        font-family: "Wittgenstein";
+        font-weight: bold;
         text-align: center;
+      }
+    /*
+    @media only screen and (max-width: 976px) {
+      .title-holder {
+        text-align: center;
+      }
     }
-  }
+    */
 
 </style>
