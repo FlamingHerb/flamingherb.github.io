@@ -55,7 +55,7 @@
 
     .subtitle-holder {
         font-size: 14px;
-        color: grey;
+        color: white;
         text-align: center;
     }
 
@@ -70,7 +70,7 @@
 
     .border-section {
         padding: 5vh;
-        border: 1px solid white;
+        border: 1px solid #DCBB57;
     }
 
     .links-section {
@@ -83,6 +83,7 @@
 
         img {
             width: 2rem;
+            filter: brightness(0) saturate(100%) invert(93%) sepia(80%) saturate(6894%) hue-rotate(314deg) brightness(91%) contrast(88%);
         }
 
     }
@@ -109,6 +110,8 @@
         font-family: "Wittgenstein";
         font-weight: bold;
         text-align: center;
+        color: #DCBB57;
+
         margin: 0;
 
       }

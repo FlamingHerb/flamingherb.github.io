@@ -9,16 +9,16 @@
 :global(a){
   font-size: 1rem;
   font-family: Montserrat, Helvetica, sans-serif;  
-  color: white;
+  color: #DCBB57;
   font-weight: bold;
   text-decoration: none;
 
   &:visited {
-    color: white;
+    color: #DCBB57;
   }
 
   &:hover {
-    color: red;
+    color: white;
   }
 }
 
@@ -113,7 +113,7 @@
   //overflow: visible; /* Hide scrollbars */
   //background: url('/images/3D_Koleksi_foto38_gradient.webp') repeat-x scroll 0 0 #1B2C4A;
   margin: 0;
-  background-color: rgb(10, 10, 10);
+  background-color: #018060;
   color: white;
 }
 
