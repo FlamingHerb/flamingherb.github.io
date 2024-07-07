@@ -25,9 +25,9 @@
 
             <!-- Important Works -->
             <div class="pages-section">
-                <a href="/about">About</a>
-                <a href="/works">Projects</a>
-                <a href="/contact">Contact</a>    
+                <a href="/">About</a>
+                <a href="/">Projects</a>
+                <a href="/">Contact</a>    
             </div>
         </div>
     </div>
