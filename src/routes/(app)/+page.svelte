@@ -14,13 +14,13 @@
         <!-- Introduction -->
         <h2 class="intro-holder">Hi, I'm...</h2>
         <h1 class="title-holder">Vaccaria</h1>
-        <p class="subtitle-holder"><em>developer, game maker, creative, learner.</em></p>
+        <p class="subtitle-holder"><em>dev, game maker, writer, learner.</em></p>
         
         <!-- Social Media Links -->
         <div class="links-section">
-            <img src="https://raw.githubusercontent.com/FlamingHerb/social-icons/master/SVG/White/Github_white.svg">
-            <img src="https://raw.githubusercontent.com/FlamingHerb/social-icons/master/SVG/White/LinkedIN_white.svg">
-            <img src="https://raw.githubusercontent.com/FlamingHerb/social-icons/master/SVG/White/itchio-logo-textless-white.svg">
+            <img src="images/icons/github.svg" alt="Github Redirect">
+            <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
+            <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
         </div>
 
         <!-- Important Works -->
@@ -48,7 +48,9 @@
     }
 
     .subtitle-holder {
+        font-size: 14px;
         color: grey;
+        text-align: center;
     }
 
     .section {
@@ -58,19 +60,15 @@
         
         flex-direction: column;
         justify-content: center;
-        
-        p {
-            font-size: 1rem;
-        }
     }
 
     .links-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         img {
-            width: 60px;
+            width: 2rem;
         }
 
     }
