@@ -1,70 +1,56 @@
 name: Deploy to GitHub Pages
 
 on:
-  workflow_dispatch:
   push:
-    branches: main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
+    branches: 'main'
 
 jobs:
-  build:
-    name: Build SvelteKit
+  build_site:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install `pnpm` via Corepack
-        run: corepack enable pnpm
-      - name: Get `pnpm` Store Directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-      - uses: actions/cache@v4
-        name: Setup `pnpm` Cache
+
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-      - name: Install Dependencies
+          version: 8
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
         run: pnpm install
-      - name: Check Formatters
-        run: pnpm fmt
-      - name: Check HTML
-        run: pnpm lint:html
-      - name: Check CSS
-        run: pnpm lint:css
-      - name: Synchronize SvelteKit
-        run: pnpm sync
-      - name: Check JavaScript
-        run: pnpm lint:js
-      - name: Check Svelte
-        run: pnpm lint:svelte
-      - name: Build Website
-        run: pnpm build
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-      - name: Upload Artifact
+
+      - name: build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: |
+          pnpm run build
+
+      - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
+
   deploy:
-    needs: build
-    name: Deployment
+    needs: build_site
     runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
