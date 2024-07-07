@@ -6,6 +6,24 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+:global(a){
+  font-size: 1rem;
+  font-family: Montserrat, Helvetica, sans-serif;  
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    color: red;
+  }
+}
+
+
+
 @font-face {
   font-family: "Eastman Alternate Trial Medium";
   src: url("/fonts/EastmanAlternateTrial-Medium.otf");

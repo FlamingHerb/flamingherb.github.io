@@ -10,26 +10,26 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
-        
-        <!-- Introduction -->
-        <h2 class="intro-holder">Hi, I'm...</h2>
-        <h1 class="title-holder">Vaccaria</h1>
-        <p class="subtitle-holder"><em>dev, game maker, writer, learner.</em></p>
-        
-        <!-- Social Media Links -->
-        <div class="links-section">
-            <img src="images/icons/github.svg" alt="Github Redirect">
-            <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
-            <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
-        </div>
+        <div class="border-section">
+            <!-- Introduction -->
+            <p class="subtitle-holder">Hi, I'm...</p>
+            <h1 class="title-holder">Vaccaria</h1>
+            <p class="subtitle-holder">dev, game maker, writer, learner.</p>
+            
+            <!-- Social Media Links -->
+            <div class="links-section">
+                <img src="images/icons/github.svg" alt="Github Redirect">
+                <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
+                <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
+            </div>
 
-        <!-- Important Works -->
-        <div class="pages-section">
-            <a href="/">About</a>
-            <a href="/">Projects</a>
-            <a href="/">Contact</a>    
+            <!-- Important Works -->
+            <div class="pages-section">
+                <a href="/about">About</a>
+                <a href="/works">Projects</a>
+                <a href="/contact">Contact</a>    
+            </div>
         </div>
-        
     </div>
 
 </div>
@@ -62,7 +62,15 @@
         justify-content: center;
     }
 
+    .border-section {
+        padding: 5vh;
+        border: 1px solid white;
+    }
+
     .links-section {
+        
+        margin: 28px 14px;
+
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -74,9 +82,10 @@
     }
 
     .pages-section {
+        margin-top: 2.5rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .img-cool {
@@ -91,19 +100,16 @@
     }
     
     .title-holder {
-        font-family: "Montserrat";
+        font-family: "Wittgenstein";
         font-weight: bold;
         text-align: center;
         margin: 0;
 
       }
 
-    .intro-holder {
-        margin-top: 0px;
-        font-family: "Montserrat";
-        font-weight: normal;
-        text-align: center;
-     }
+    
+    // The weird Hero CSS shit they do that just works.
+
 
 
  
