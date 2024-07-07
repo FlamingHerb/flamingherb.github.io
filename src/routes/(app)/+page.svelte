@@ -13,13 +13,18 @@
         
         <!-- Introduction -->
         <h2 class="intro-holder">Hi, I'm...</h2>
-        <h1 class="title-holder">Omi</h1>
+        <h1 class="title-holder">Vaccaria</h1>
         <p class="subtitle-holder"><em>developer, game maker, creative, learner.</em></p>
         
         <!-- Social Media Links -->
+        <div class="links-section">
+            <img src="https://raw.githubusercontent.com/FlamingHerb/social-icons/master/SVG/White/Github_white.svg">
+            <img src="https://raw.githubusercontent.com/FlamingHerb/social-icons/master/SVG/White/LinkedIN_white.svg">
+            <img src="https://raw.githubusercontent.com/FlamingHerb/social-icons/master/SVG/White/itchio-logo-textless-white.svg">
+        </div>
 
         <!-- Important Works -->
-        <div class="links-section">
+        <div class="pages-section">
             <a href="/">About</a>
             <a href="/">Projects</a>
             <a href="/">Contact</a>    
@@ -60,6 +65,17 @@
     }
 
     .links-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        img {
+            width: 60px;
+        }
+
+    }
+
+    .pages-section {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
