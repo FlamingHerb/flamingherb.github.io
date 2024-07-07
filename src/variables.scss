@@ -3,7 +3,7 @@
 
 :global(p) {
   font-size: 1rem;
-  font-family: Wittgenstein, Helvetica, sans-serif;
+  font-family: Montserrat, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -43,14 +43,16 @@
   overflow: hidden;
   //background-color: #ffffff;
   max-width: 976px;
-  margin: auto;
+  margin-left: 20vw;
+  margin-right: 20vw;
   justify-content: center;
 
-  //border: 2px solid #303030;
-  //border-top: 0;
+}
 
-  padding-top: 1em;
-  padding-bottom: 2em;
+@media only screen and (max-width: 768px) {
+  :global(.container) {
+    margin: auto;
+  }
 }
 
 :global(.mini-container) {

@@ -10,10 +10,23 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
+        
+        <!-- Introduction -->
         <h2 class="intro-holder">Hi, I'm...</h2>
         <h1 class="title-holder">Omi</h1>
-        <p><em>developer, game maker, creative, learner.</em></p>
+        <p class="subtitle-holder"><em>developer, game maker, creative, learner.</em></p>
+        
+        <!-- Social Media Links -->
+
+        <!-- Important Works -->
+        <div class="links-section">
+            <a href="/">About</a>
+            <a href="/">Projects</a>
+            <a href="/">Contact</a>    
+        </div>
+        
     </div>
+
 </div>
 
 <style lang="scss">
@@ -29,12 +42,29 @@
 
     }
 
+    .subtitle-holder {
+        color: grey;
+    }
+
     .section {
-        padding: 14px;
+        display: flex;
+        height: 100vh;
+        //padding: 14px;
+        
+        flex-direction: column;
+        justify-content: center;
+        
         p {
             font-size: 1rem;
         }
     }
+
+    .links-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     .img-cool {
         margin: auto;
         margin-top: 3em;
@@ -50,9 +80,12 @@
         font-family: "Montserrat";
         font-weight: bold;
         text-align: center;
+        margin: 0;
+
       }
 
     .intro-holder {
+        margin-top: 0px;
         font-family: "Montserrat";
         font-weight: normal;
         text-align: center;
@@ -62,11 +95,10 @@
  
      /*
  
+     
      @media only screen and (max-width: 976px) {
       .title-holder {
-        text-align: center;
-      }
-    }
+
     */
 
 </style>
