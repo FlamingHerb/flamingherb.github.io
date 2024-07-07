@@ -7,6 +7,10 @@
   //   throw redirect(307, '/notallowed');
   // }
 
+  export const prerender = true;
+
+  export const trailingSlash = "always";
+
   import taglineDatabase from '$lib/taglines.json';
   import { navigating } from '$app/stores';
 
