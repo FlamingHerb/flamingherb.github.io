@@ -4,7 +4,7 @@
   import { page } from '$app/stores';
 
   // if (PUBLIC_CURRENT_MODE == "development" && $page.url.pathname != "/notallowed") {
-  //   throw redirect(307, '/notallowed');
+  //   throw redirect(307, '/notallowed'); bruh
   // }
 
 
