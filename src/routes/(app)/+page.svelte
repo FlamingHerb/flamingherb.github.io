@@ -33,7 +33,7 @@
             <div class="pages-section">
                 <a href="/about">About</a>
                 <a href="/projects">Projects</a>
-                <a href="/contact">Contact</a>    
+                <a href="/">Contact</a>    
             </div>
         </div>
     </div>
