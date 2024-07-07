@@ -10,9 +10,9 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
-        <h2 class="title-holder">Hi, I'm...</h2>
-        <h1 class="title-holder">Michael Omisol!</h1>
-        
+        <h2 class="intro-holder">Hi, I'm...</h2>
+        <h1 class="title-holder">Omi</h1>
+        <p><em>developer, game maker, creative, learner.</em></p>
     </div>
 </div>
 
@@ -47,12 +47,22 @@
     }
     
     .title-holder {
-        font-family: "Wittgenstein";
+        font-family: "Montserrat";
         font-weight: bold;
         text-align: center;
       }
-    /*
-    @media only screen and (max-width: 976px) {
+
+    .intro-holder {
+        font-family: "Montserrat";
+        font-weight: normal;
+        text-align: center;
+     }
+
+
+ 
+     /*
+ 
+     @media only screen and (max-width: 976px) {
       .title-holder {
         text-align: center;
       }
