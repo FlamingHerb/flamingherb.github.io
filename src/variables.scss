@@ -8,8 +8,8 @@
 
 :global(a){
   font-size: 1rem;
-  font-family: Montserrat, Helvetica, sans-serif;  
-  color: #DCBB57;
+  font-family: Montserrat, helvetica, sans-serif;  
+  color: #dcbb57;
   font-weight: bold;
   text-decoration: none;
 
@@ -23,6 +23,22 @@
 }
 
 
+:global(h1){
+  color: #dcbb57;
+  font-family: "Wittgenstein", helvetica, sans-serif;
+}
+
+:global(body) {
+  //overflow: visible; /* Hide scrollbars */
+  //background: url('/images/3D_Koleksi_foto38_gradient.webp') repeat-x scroll 0 0 #1B2C4A;
+  margin: 0;
+  background-color: #018060;
+  color: white;
+}
+
+:global(body::-webkit-scrollbar) {
+  display: none;
+}
 
 @font-face {
   font-family: "Eastman Alternate Trial Medium";
@@ -109,17 +125,7 @@
   }
 }
 
-:global(body) {
-  //overflow: visible; /* Hide scrollbars */
-  //background: url('/images/3D_Koleksi_foto38_gradient.webp') repeat-x scroll 0 0 #1B2C4A;
-  margin: 0;
-  background-color: #018060;
-  color: white;
-}
 
-:global(body::-webkit-scrollbar) {
-  display: none;
-}
 
 @keyframes move {
   100% {

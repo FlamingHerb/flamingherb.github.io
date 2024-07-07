@@ -60,13 +60,6 @@
         }
     }
 
-    h1 {
-        font-size: 1.8rem;
-        font-family: 'Segoe UI', Helvetica, sans-serif;
-        font-weight: normal;
-    }
-
-
     .section {
         
         min-width: 85%;

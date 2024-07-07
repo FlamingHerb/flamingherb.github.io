@@ -90,33 +90,7 @@
     padding-bottom: 0;
   }
 
-  .nav {
-    display: flex;
-    align-items: center;
-    //background-color: #2f2f2f;
-    //max-width: 976px;
-    padding: 8px 0;
-    //margin: auto;
-
-    border-top: 0;
-    border-bottom: 0;
-
-    a {
-      text-align: center;
-      font-size: 1.25rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      text-decoration: none;
-      color: #000000;
-      padding: 0 0.6em;
-
-      &:hover{
-        color: #ff9600;
-      }
-
-    }
-  }
-
+  
 
   #logo {
     margin-left: 1em;
