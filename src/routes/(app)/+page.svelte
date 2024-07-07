@@ -18,16 +18,22 @@
             
             <!-- Social Media Links -->
             <div class="links-section">
-                <img src="images/icons/github.svg" alt="Github Redirect">
-                <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
-                <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
+                <a target="_blank" href="https://github.com/FlamingHerb">
+                    <img src="images/icons/github.svg" alt="Github Redirect">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
+                    <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
+                </a>
+                <a target="_blank" href="https://vaccaria.itch.io/">
+                    <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
+                </a>
             </div>
 
             <!-- Important Works -->
             <div class="pages-section">
-                <a href="/">About</a>
-                <a href="/">Projects</a>
-                <a href="/">Contact</a>    
+                <a href="/about">About</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>    
             </div>
         </div>
     </div>
