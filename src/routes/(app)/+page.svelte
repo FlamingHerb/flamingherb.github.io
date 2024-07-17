@@ -10,32 +10,29 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
-        <div class="top-border">
-            <div class="border-section sharp-fold">
-                <!-- Introduction -->
-                <p class="subtitle-holder">Hi, I'm...</p>
-                <h1 class="title-holder">Vaccaria</h1>
-                <p class="subtitle-holder">dev, game maker, writer, learner.</p>
-                
-                <!-- Social Media Links -->
-                <div class="links-section">
-                    <a target="_blank" href="https://github.com/FlamingHerb">
-                        <img src="images/icons/github.svg" alt="Github Redirect">
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
-                        <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
-                    </a>
-                    <a target="_blank" href="https://vaccaria.itch.io/">
-                        <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
-                    </a>
-                </div>
-
-                <!-- Important Works -->
-                <div class="pages-section">
-                    <a href="/about">About</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/">Contact</a>    
-                </div>
+        <div class="border-section sharp-fold">
+            <!-- Introduction -->
+            <p class="subtitle-holder">Hi, I'm...</p>
+            <h1 class="title-holder">Vaccaria</h1>
+            <p class="subtitle-holder">dev, game maker, writer, learner.</p>
+            
+            <!-- Social Media Links -->
+            <div class="links-section">
+                <a target="_blank" href="https://github.com/FlamingHerb">
+                    <img src="images/icons/github.svg" alt="Github Redirect">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
+                    <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
+                </a>
+                <a target="_blank" href="https://vaccaria.itch.io/">
+                    <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
+                </a>
+            </div>
+            <!-- Important Works -->
+            <div class="pages-section">
+                <a href="/about">About</a>
+                <a href="/projects">Projects</a>
+                <a href="/">Contact</a>    
             </div>
         </div>
     </div>
@@ -67,8 +64,7 @@
         width: 228px;
         height: 249px;
         padding: 37px;
-        border-left: 1px solid $border-color;
-        border-bottom: 1px solid $border-color;
+        border: 1px solid $border-color;
         
         
     }
@@ -80,26 +76,7 @@
     // https://www.steckinsights.com/shorten-length-border-bottom-pure-css/
 
 
-    .top-border {
-        position: relative;
-        &:before {
-            content: ""; 
-            display: block; 
-            margin: 0; 
-            width: 254.5px; 
-            border-bottom: 1px solid $border-color; 
-            
-        }
-        &:after {
-            content: "";
-            z-index: -1;
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            height: 296.5px;
-            border-right: 1px solid $border-color;
-        }
-    }
+    
 
     .sharp-fold {
         position: relative;
@@ -120,6 +97,18 @@
 
             border-bottom: 1px solid $border-color;
             border-left: 1px solid $border-color;
+        }
+
+        &:after {
+            content: '';
+            transform: translateX(1.4em) translateY(-3.9em) rotate(-61deg);
+            transform-origin: bottom right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $base-color;
+            width: 2em;
+            height: 4em;
         }
     }
 
