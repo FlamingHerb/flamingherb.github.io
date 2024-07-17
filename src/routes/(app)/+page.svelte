@@ -10,30 +10,32 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
-        <div class="border-section">
-            <!-- Introduction -->
-            <p class="subtitle-holder">Hi, I'm...</p>
-            <h1 class="title-holder">Vaccaria</h1>
-            <p class="subtitle-holder">dev, game maker, writer, learner.</p>
-            
-            <!-- Social Media Links -->
-            <div class="links-section">
-                <a target="_blank" href="https://github.com/FlamingHerb">
-                    <img src="images/icons/github.svg" alt="Github Redirect">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
-                    <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
-                </a>
-                <a target="_blank" href="https://vaccaria.itch.io/">
-                    <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
-                </a>
-            </div>
+        <div class="top-border">
+            <div class="border-section sharp-fold">
+                <!-- Introduction -->
+                <p class="subtitle-holder">Hi, I'm...</p>
+                <h1 class="title-holder">Vaccaria</h1>
+                <p class="subtitle-holder">dev, game maker, writer, learner.</p>
+                
+                <!-- Social Media Links -->
+                <div class="links-section">
+                    <a target="_blank" href="https://github.com/FlamingHerb">
+                        <img src="images/icons/github.svg" alt="Github Redirect">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
+                        <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
+                    </a>
+                    <a target="_blank" href="https://vaccaria.itch.io/">
+                        <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
+                    </a>
+                </div>
 
-            <!-- Important Works -->
-            <div class="pages-section">
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="/">Contact</a>    
+                <!-- Important Works -->
+                <div class="pages-section">
+                    <a href="/about">About</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/">Contact</a>    
+                </div>
             </div>
         </div>
     </div>
@@ -41,17 +43,9 @@
 </div>
 
 <style lang="scss">
-    #left-side {
-        width: 600px;
-        justify-content: center;
-    }
 
-    #right-side {
-        display: flex;
-        width: 348px;
-        justify-content: center;
-
-    }
+    $base-color: #018060;
+    $border-color: #DCBB57;
 
     .subtitle-holder {
         font-size: 14px;
@@ -69,8 +63,35 @@
     }
 
     .border-section {
-        padding: 5vh;
-        border: 1px solid #DCBB57;
+        position: relative;
+        width: 228px;
+        height: 249px;
+        padding: 37px;
+        border-left: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        
+        
+    }
+    
+    // https://www.steckinsights.com/shorten-length-border-bottom-pure-css/
+    .top-border {
+        position: relative;
+        &:before {
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            margin: 0; /* This will center the border. */
+            width: 254.5px; /* Change this to whatever width you want. */
+            border-bottom: 1px solid $border-color; /* This creates the border. Replace black with whatever color you want. */
+            
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 296.5px;
+            border-right: 1px solid $border-color;
+        }
     }
 
     .links-section {
@@ -119,6 +140,29 @@
     
     // The weird Hero CSS shit they do that just works.
 
+    /* 60-degree folded corner */
+    // https://codepen.io/yowlonglee/pen/eQZoWv?editors=1100
+    .sharp-fold {
+        position: relative;
+        background: $base-color;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) no-repeat 100% 0;
+            width: 1.73em;
+            height: 3em;
+            transform: translateY(-1.3em) rotate(-30deg);
+            transform-origin: bottom right;
+            border-bottom-left-radius: inherit;
+            box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+
+            border-bottom: 1px solid $border-color;
+            border-left: 1px solid $border-color;
+        }
+    }
 
 
  
