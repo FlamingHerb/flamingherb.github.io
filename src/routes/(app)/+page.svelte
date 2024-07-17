@@ -73,24 +73,53 @@
         
     }
     
+
+    /* 60-degree folded corner */
+    // https://codepen.io/yowlonglee/pen/eQZoWv?editors=1100
+
     // https://www.steckinsights.com/shorten-length-border-bottom-pure-css/
+
+
     .top-border {
         position: relative;
         &:before {
-            content: ""; /* This is necessary for the pseudo element to work. */ 
-            display: block; /* This will put the pseudo element on its own line. */
-            margin: 0; /* This will center the border. */
-            width: 254.5px; /* Change this to whatever width you want. */
-            border-bottom: 1px solid $border-color; /* This creates the border. Replace black with whatever color you want. */
+            content: ""; 
+            display: block; 
+            margin: 0; 
+            width: 254.5px; 
+            border-bottom: 1px solid $border-color; 
             
         }
         &:after {
             content: "";
+            z-index: -1;
             position: absolute;
             bottom: 0px;
             width: 100%;
             height: 296.5px;
             border-right: 1px solid $border-color;
+        }
+    }
+
+    .sharp-fold {
+        position: relative;
+        background: $base-color;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) no-repeat 100% 0;
+            width: 1.73em;
+            height: 3em;
+            transform: translateY(-1.3em) rotate(-30deg);
+            transform-origin: bottom right;
+            border-bottom-left-radius: inherit;
+            box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+
+            border-bottom: 1px solid $border-color;
+            border-left: 1px solid $border-color;
         }
     }
 
@@ -140,29 +169,7 @@
     
     // The weird Hero CSS shit they do that just works.
 
-    /* 60-degree folded corner */
-    // https://codepen.io/yowlonglee/pen/eQZoWv?editors=1100
-    .sharp-fold {
-        position: relative;
-        background: $base-color;
     
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) no-repeat 100% 0;
-            width: 1.73em;
-            height: 3em;
-            transform: translateY(-1.3em) rotate(-30deg);
-            transform-origin: bottom right;
-            border-bottom-left-radius: inherit;
-            box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
-
-            border-bottom: 1px solid $border-color;
-            border-left: 1px solid $border-color;
-        }
-    }
 
 
  
