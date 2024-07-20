@@ -4,7 +4,9 @@
 </head>
 
 <div class="container column-direction" style="margin-bottom: 4rem;">
-    <h1 class="title-holder">Games</h1>
+    <h1 class="title-holder">Projects</h1>
+    
+    <h2>Games</h2>
     
     <div class="mini-container row-direction">
         <figure>
@@ -57,7 +59,7 @@
             </figcaption>
         </figure>
     </div>
-    <h1>WORKS</h1>
+    <h2>Works</h2>
     <div class="mini-container row-direction">
         <figure>
             <img class="poster" src="images/works_poster/mtgr.png" alt="Dev8 Website">
@@ -159,7 +161,7 @@
 
     /* START:   Mobile responsive area! */
 
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: 428px){
         figure {
             min-width: 150px;
             max-width: 150px;
