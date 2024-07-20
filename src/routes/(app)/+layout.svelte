@@ -2,29 +2,31 @@
   // import { PUBLIC_CURRENT_MODE } from '$env/static/public';
   // import { redirect } from '@sveltejs/kit';
   import { page } from '$app/stores';
+  import Navbar from '$lib/Navbar.svelte';
 
   // if (PUBLIC_CURRENT_MODE == "development" && $page.url.pathname != "/notallowed") {
   //   throw redirect(307, '/notallowed'); bruh
   // }
 
+  // import taglineDatabase from '$lib/taglines.json';
+  // import { navigating } from '$app/stores';
+  // let innerWidth = 0;
+  // let tagline = "If you see this message, then that means you haven't loaded everything properly.";
+  // function taglineGenerator(){
+  //   const num = Math.floor(Math.random() * (taglineDatabase.length))
+  //   tagline = taglineDatabase[num];
+  // }
+  // 
+  // taglineGenerator();
+  // $: if($navigating) taglineGenerator();
 
-
-  import taglineDatabase from '$lib/taglines.json';
-  import { navigating } from '$app/stores';
-
-  let innerWidth = 0;
-
-  let tagline = "If you see this message, then that means you haven't loaded everything properly.";
-  function taglineGenerator(){
-    const num = Math.floor(Math.random() * (taglineDatabase.length))
-    tagline = taglineDatabase[num];
-  }
-  
-  taglineGenerator();
-  $: if($navigating) taglineGenerator();
 </script>
 
-<svelte:window bind:innerWidth />
+{#if ($page.url.pathname != "/")}
+   <Navbar></Navbar>
+{/if}
+
+<!-- <svelte:window bind:innerWidth /> -->
 <!-- 
 <div class="local-header">
   
@@ -142,10 +144,7 @@
 
   
 
-  .current{
-    text-decoration: underline;
-    color: #ff9600;
-  }
+  
 
   
 </style>
