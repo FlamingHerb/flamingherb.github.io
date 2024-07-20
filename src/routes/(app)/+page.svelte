@@ -1,4 +1,6 @@
 <script>
+  import Navbar from "../../lib/Navbar.svelte";
+
     const d = new Date();
     let year = d.getFullYear();
     let authorimg = "/images/witch.png";
@@ -29,11 +31,7 @@
                 </a>
             </div>
             <!-- Important Works -->
-            <div class="pages-section">
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="/">Contact</a>    
-            </div>
+            <Navbar></Navbar>
         </div>
     </div>
 
