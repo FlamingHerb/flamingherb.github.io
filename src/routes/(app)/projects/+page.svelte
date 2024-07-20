@@ -4,11 +4,12 @@
 </head>
 
 <div class="container column-direction" style="margin-bottom: 4rem;">
-    <h1 class="title-holder">Projects</h1>
+    <!-- <h1 class="title-holder">Projects</h1> -->
     
     <h2>Games</h2>
     
     <div class="mini-container row-direction">
+        <!-- 
         <figure>
             <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch 2 Poster">
             <figcaption>
@@ -22,9 +23,10 @@
               <strong>Sweet Evil Fantasy</strong><br />
               <span>(WIP)</span>
             </figcaption>
-        </figure>
+        </figure> 
+        -->
         <figure>
-            <img class="poster" src="images/works_poster/pu.png" alt="Project Unity Poster">
+            <img class="poster" src="images/works_poster/pv.png" alt="Project Privacy Poster">
             <figcaption>
               <strong>Project Privacy</strong><br />
               <span>(2024)</span>
@@ -113,6 +115,12 @@
         text-align: center;
         font-size: 1em;
 
+    }
+
+    h2 {
+        font-family: "Wittgenstein";
+        font-weight: bold;
+        color: $border-color;
     }
 
     .poster {
