@@ -17,7 +17,7 @@
             <img class="poster" src="images/works_poster/pu.png" alt="Sweet Evil Fantasy Poster">
             <figcaption>
               <strong>Sweet Evil Fantasy</strong><br />
-              <span>(TBD)</span>
+              <span>(WIP)</span>
             </figcaption>
         </figure>
         <figure>
@@ -84,20 +84,32 @@
 
 <style lang="scss">
 
+    .mini-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        //overflow: hidden;
+        //background-color: #ffffff;
+        max-width: 976px;
+        margin: auto;
+    }
+
     figure {
-        margin: 0;
+        margin: 1em 0;
         max-width: 223.2px;
     }
 
     figcaption {
+        margin-top: 0.5em;
         text-align: center;
-        max-width: 195.2px;
-        padding: 0px 14px;
+        width: 100%;
     }
 
     .poster {
-        width: 195.2px;
-        padding: 14px;
+        display: block;
+        margin: auto;
+        width: 100%;
     }
 
     h1 {
@@ -120,14 +132,14 @@
 
         h1 {
             margin-top: 0.25em;
-            font-size: 1.2rem;
+            font-size: 0.75rem;
 
             a {
                 text-decoration: none;
             }
         }
         p {
-            font-size: 0.75rem;
+            font-size: 0.5rem;
         }
 
         .description{
@@ -136,5 +148,17 @@
             padding-right: 0.5em;
         }
     }
+
+    /* START:   Mobile responsive area! */
+
+    @media only screen and (max-width: 400px){
+        figure {
+            max-width: 166px;
+        }
+    }
+
+
+    /* END:     Mobile responsive area! */
+    
 
 </style>
