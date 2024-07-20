@@ -117,12 +117,6 @@
 
     }
 
-    h2 {
-        font-family: "Wittgenstein";
-        font-weight: bold;
-        color: $border-color;
-    }
-
     .poster {
         display: block;
         margin: auto;
