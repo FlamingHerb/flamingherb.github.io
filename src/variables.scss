@@ -1,20 +1,28 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
 /* Global Styles */
 
+$border-color: #dcbb57;
+$background-color: #018060;
+$global-max-width: 428px;
+
 :global(p) {
   font-size: 1rem;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+:global(figcaption){
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
 :global(a){
   font-size: 1rem;
   font-family: Montserrat, helvetica, sans-serif;  
-  color: #dcbb57;
+  color: $border-color;
   font-weight: bold;
   text-decoration: none;
 
   &:visited {
-    color: #DCBB57;
+    color: $border-color;
   }
 
   &:hover {
@@ -23,7 +31,7 @@
 }
 
 
-:global(h1){
+:global(h1, h2, h3){
   color: #dcbb57;
   font-family: "Wittgenstein", helvetica, sans-serif;
 }
@@ -32,7 +40,7 @@
   //overflow: visible; /* Hide scrollbars */
   //background: url('/images/3D_Koleksi_foto38_gradient.webp') repeat-x scroll 0 0 #1B2C4A;
   margin: 0;
-  background-color: #018060;
+  background-color: $background-color;
   color: white;
 }
 
@@ -76,9 +84,9 @@
   align-items: center;
   overflow: hidden;
   //background-color: #ffffff;
-  max-width: 976px;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  
+  margin-left: 15vw;
+  margin-right: 15vw;
   justify-content: center;
 
 }
@@ -87,17 +95,6 @@
   :global(.container) {
     margin: auto;
   }
-}
-
-:global(.mini-container) {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  flex-wrap: wrap;
-  //overflow: hidden;
-  //background-color: #ffffff;
-  max-width: 976px;
-  margin: auto;
 }
 
 :global(.column-direction) {

@@ -1,4 +1,6 @@
 <script>
+  import Navbar from "../../lib/Navbar.svelte";
+
     const d = new Date();
     let year = d.getFullYear();
     let authorimg = "/images/witch.png";
@@ -10,7 +12,7 @@
 
 <div class="container wrapper rrow-direction">
     <div class="section">
-        <div class="border-section">
+        <div class="border-section sharp-fold">
             <!-- Introduction -->
             <p class="subtitle-holder">Hi, I'm...</p>
             <h1 class="title-holder">Vaccaria</h1>
@@ -28,30 +30,17 @@
                     <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
                 </a>
             </div>
-
             <!-- Important Works -->
-            <div class="pages-section">
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="/">Contact</a>    
-            </div>
+            <Navbar></Navbar>
         </div>
     </div>
 
 </div>
 
 <style lang="scss">
-    #left-side {
-        width: 600px;
-        justify-content: center;
-    }
 
-    #right-side {
-        display: flex;
-        width: 348px;
-        justify-content: center;
-
-    }
+    $base-color: #018060;
+    $border-color: #DCBB57;
 
     .subtitle-holder {
         font-size: 14px;
@@ -69,8 +58,56 @@
     }
 
     .border-section {
-        padding: 5vh;
-        border: 1px solid #DCBB57;
+        position: relative;
+        width: 228px;
+        height: 249px;
+        padding: 37px;
+        border: 1px solid $border-color;
+        
+        
+    }
+    
+
+    /* 60-degree folded corner */
+    // https://codepen.io/yowlonglee/pen/eQZoWv?editors=1100
+
+    // https://www.steckinsights.com/shorten-length-border-bottom-pure-css/
+
+
+    
+
+    .sharp-fold {
+        position: relative;
+        background: $base-color;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) no-repeat 100% 0;
+            width: 1.73em;
+            height: 3em;
+            transform: translateY(-1.3em) rotate(-30deg);
+            transform-origin: bottom right;
+            border-bottom-left-radius: inherit;
+            box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+
+            border-bottom: 1px solid $border-color;
+            border-left: 1px solid $border-color;
+        }
+
+        &:after {
+            content: '';
+            transform: translateX(1.4em) translateY(-3.9em) rotate(-61deg);
+            transform-origin: bottom right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $base-color;
+            width: 2em;
+            height: 4em;
+        }
     }
 
     .links-section {
@@ -114,11 +151,13 @@
 
         margin: 0;
 
-      }
+    }
 
-    
+
+
     // The weird Hero CSS shit they do that just works.
 
+    
 
 
  

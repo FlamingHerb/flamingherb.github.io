@@ -4,8 +4,12 @@
 </head>
 
 <div class="container column-direction" style="margin-bottom: 4rem;">
-    <h1>GAMES</h1>
+    <!-- <h1 class="title-holder">Projects</h1> -->
+    
+    <h2>Games</h2>
+    
     <div class="mini-container row-direction">
+        <!-- 
         <figure>
             <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch 2 Poster">
             <figcaption>
@@ -17,11 +21,12 @@
             <img class="poster" src="images/works_poster/pu.png" alt="Sweet Evil Fantasy Poster">
             <figcaption>
               <strong>Sweet Evil Fantasy</strong><br />
-              <span>(TBD)</span>
+              <span>(WIP)</span>
             </figcaption>
-        </figure>
+        </figure> 
+        -->
         <figure>
-            <img class="poster" src="images/works_poster/pu.png" alt="Project Unity Poster">
+            <img class="poster" src="images/works_poster/pv.png" alt="Project Privacy Poster">
             <figcaption>
               <strong>Project Privacy</strong><br />
               <span>(2024)</span>
@@ -56,7 +61,7 @@
             </figcaption>
         </figure>
     </div>
-    <h1>WORKS</h1>
+    <h2>Works</h2>
     <div class="mini-container row-direction">
         <figure>
             <img class="poster" src="images/works_poster/mtgr.png" alt="Dev8 Website">
@@ -84,28 +89,47 @@
 
 <style lang="scss">
 
+    .mini-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        //overflow: hidden;
+        //background-color: #ffffff;
+        width: 100%;
+        margin: auto;
+
+        column-gap: 20px;
+    }
+
     figure {
-        margin: 0;
+        flex: 1;
+        margin: 0.5em 0;
+        min-width: 223.2px;
         max-width: 223.2px;
     }
 
     figcaption {
+        margin-top: 0.5em;
         text-align: center;
-        max-width: 195.2px;
-        padding: 0px 14px;
+        font-size: 1em;
+
     }
 
     .poster {
-        width: 195.2px;
-        padding: 14px;
+        display: block;
+        margin: auto;
+        width: 100%;
     }
 
-    h1 {
-        display: block;
+    .title-holder {
+        font-family: "Wittgenstein";
+        font-weight: bold;
+        text-align: center;
+        color: $border-color;
         margin-bottom: 0;
-        font-size: 1.8rem;
-        font-family: 'Segoe UI', Helvetica, sans-serif;
-        font-weight: normal;
+        font-size: 1.875rem;
     }
 
     p {
@@ -120,14 +144,14 @@
 
         h1 {
             margin-top: 0.25em;
-            font-size: 1.2rem;
+            font-size: 0.75rem;
 
             a {
                 text-decoration: none;
             }
         }
         p {
-            font-size: 0.75rem;
+            font-size: 0.5rem;
         }
 
         .description{
@@ -136,5 +160,21 @@
             padding-right: 0.5em;
         }
     }
+
+    /* START:   Mobile responsive area! */
+
+    @media only screen and (max-width: $global-max-width){
+        figure {
+            min-width: 150px;
+            max-width: 150px;
+        }
+        figcaption {
+            font-size: 0.75em;
+        }
+    }
+
+
+    /* END:     Mobile responsive area! */
+    
 
 </style>

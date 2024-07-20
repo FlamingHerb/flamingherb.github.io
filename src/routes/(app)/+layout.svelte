@@ -2,29 +2,33 @@
   // import { PUBLIC_CURRENT_MODE } from '$env/static/public';
   // import { redirect } from '@sveltejs/kit';
   import { page } from '$app/stores';
+  import Navbar from '$lib/Navbar.svelte';
 
   // if (PUBLIC_CURRENT_MODE == "development" && $page.url.pathname != "/notallowed") {
   //   throw redirect(307, '/notallowed'); bruh
   // }
 
+  // import taglineDatabase from '$lib/taglines.json';
+  // import { navigating } from '$app/stores';
+  // let innerWidth = 0;
+  // let tagline = "If you see this message, then that means you haven't loaded everything properly.";
+  // function taglineGenerator(){
+  //   const num = Math.floor(Math.random() * (taglineDatabase.length))
+  //   tagline = taglineDatabase[num];
+  // }
+  // 
+  // taglineGenerator();
+  // $: if($navigating) taglineGenerator();
 
-
-  import taglineDatabase from '$lib/taglines.json';
-  import { navigating } from '$app/stores';
-
-  let innerWidth = 0;
-
-  let tagline = "If you see this message, then that means you haven't loaded everything properly.";
-  function taglineGenerator(){
-    const num = Math.floor(Math.random() * (taglineDatabase.length))
-    tagline = taglineDatabase[num];
-  }
-  
-  taglineGenerator();
-  $: if($navigating) taglineGenerator();
 </script>
 
-<svelte:window bind:innerWidth />
+{#if ($page.url.pathname != "/")}
+  <div id="navbar-comp">
+    <Navbar></Navbar>
+  </div>
+{/if}
+
+<!-- <svelte:window bind:innerWidth /> -->
 <!-- 
 <div class="local-header">
   
@@ -91,6 +95,18 @@
   }
 
   
+  #navbar-comp {
+    border: 1px solid $border-color;
+    padding: 1em 0.5em;
+    margin: 25px auto 0px auto;
+    max-width: 500px;
+  }
+
+  @media only screen and (max-width: $global-max-width){
+    #navbar-comp {
+      margin: 25px 1.2rem 0px 1.2rem;
+    }
+  }
 
   #logo {
     margin-left: 1em;
@@ -142,10 +158,7 @@
 
   
 
-  .current{
-    text-decoration: underline;
-    color: #ff9600;
-  }
+  
 
   
 </style>
