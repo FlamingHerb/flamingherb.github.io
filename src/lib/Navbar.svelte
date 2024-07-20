@@ -2,7 +2,6 @@
     import { page } from '$app/stores';
 </script>
 <div class="pages-section">
-    
     <!-- Home Link only appears anywhere that isn't the landing page. -->
     {#if $page.url.pathname != "/"}
         <a class="{$page.url.pathname === '/' ? 'current' : ''}" href="/">Home</a>    
@@ -14,14 +13,17 @@
 </div>
 
 <style lang="scss">
+    a {
+        font-size: 1em;
+    }
     .current{
         text-decoration: underline;
         color: #ff9600;
     }
    .pages-section {
-        margin-top: 2.5rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        column-gap: 20px;
     } 
 </style>

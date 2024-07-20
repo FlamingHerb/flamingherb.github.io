@@ -23,7 +23,9 @@
 </script>
 
 {#if ($page.url.pathname != "/")}
-   <Navbar></Navbar>
+  <div id="navbar-comp">
+    <Navbar></Navbar>
+  </div>
 {/if}
 
 <!-- <svelte:window bind:innerWidth /> -->
@@ -93,6 +95,18 @@
   }
 
   
+  #navbar-comp {
+    border: 1px solid $border-color;
+    padding: 1em 0.5em;
+    margin: 25px auto 0px auto;
+    max-width: 500px;
+  }
+
+  @media only screen and (max-width: $global-max-width){
+    #navbar-comp {
+      margin: 25px 1.2rem 0px 1.2rem;
+    }
+  }
 
   #logo {
     margin-left: 1em;

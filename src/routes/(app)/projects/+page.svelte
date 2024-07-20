@@ -161,7 +161,7 @@
 
     /* START:   Mobile responsive area! */
 
-    @media only screen and (max-width: 428px){
+    @media only screen and (max-width: $global-max-width){
         figure {
             min-width: 150px;
             max-width: 150px;
