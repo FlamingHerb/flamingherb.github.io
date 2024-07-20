@@ -4,7 +4,8 @@
 </head>
 
 <div class="container column-direction" style="margin-bottom: 4rem;">
-    <h1>GAMES</h1>
+    <h1 class="title-holder">Games</h1>
+    
     <div class="mini-container row-direction">
         <figure>
             <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch 2 Poster">
@@ -86,24 +87,30 @@
 
     .mini-container {
         display: flex;
-        align-items: baseline;
-        justify-content: space-evenly;
+        align-items: stretch;
+        justify-content: center;
         flex-wrap: wrap;
+        
         //overflow: hidden;
         //background-color: #ffffff;
-        max-width: 976px;
+        width: 100%;
         margin: auto;
+
+        column-gap: 20px;
     }
 
     figure {
-        margin: 1em 0;
+        flex: 1;
+        margin: 0.5em 0;
+        min-width: 223.2px;
         max-width: 223.2px;
     }
 
     figcaption {
         margin-top: 0.5em;
         text-align: center;
-        width: 100%;
+        font-size: 1em;
+
     }
 
     .poster {
@@ -112,12 +119,13 @@
         width: 100%;
     }
 
-    h1 {
-        display: block;
+    .title-holder {
+        font-family: "Wittgenstein";
+        font-weight: bold;
+        text-align: center;
+        color: $border-color;
         margin-bottom: 0;
-        font-size: 1.8rem;
-        font-family: 'Segoe UI', Helvetica, sans-serif;
-        font-weight: normal;
+        font-size: 1.875rem;
     }
 
     p {
@@ -153,7 +161,11 @@
 
     @media only screen and (max-width: 400px){
         figure {
-            max-width: 166px;
+            min-width: 150px;
+            max-width: 150px;
+        }
+        figcaption {
+            font-size: 0.75em;
         }
     }
 
