@@ -84,9 +84,10 @@ $global-max-width: 428px;
   align-items: center;
   overflow: hidden;
   //background-color: #ffffff;
+  max-width: 768px;
   
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin: auto;
+
   justify-content: center;
 
 }

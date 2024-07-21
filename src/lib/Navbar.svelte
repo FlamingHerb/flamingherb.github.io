@@ -18,7 +18,7 @@
     }
     .current{
         text-decoration: underline;
-        color: #FF9C5E;
+        color: white;
     }
    .pages-section {
         display: flex;
