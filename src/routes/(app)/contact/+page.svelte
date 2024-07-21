@@ -16,13 +16,12 @@
                 <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
                     <img alt="LinkedIn" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" /> 
                 </a>
-                
-                
             </div>
             <br>
             <hr>
-            <p>Or directly send me an e-mail at:</p>
+            <p style="margin-top: 2em;">Or directly send me an e-mail at either:</p>
             <a href="mailto:michaelomisol@protonmail.com">michaelomisol@protonmail.com</a>
+            <a href="mailto:msbbomisol@gmail.com">msbbomisol@gmail.com</a>
         </div>
     </div>
 </div>
