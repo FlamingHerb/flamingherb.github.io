@@ -1,7 +1,7 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
 /* Global Styles */
 
-$border-color: #EFC050;
+$border-color: #FFB232;
 $background-color: #009B77;
 $global-max-width: 428px;
 
@@ -26,13 +26,13 @@ $global-max-width: 428px;
   }
 
   &:hover {
-    color: white;
+    color: #F05C00;
   }
 }
 
 
 :global(h1, h2, h3){
-  color: #dcbb57;
+  color: $border-color;
   font-family: "Wittgenstein", helvetica, sans-serif;
 }
 
