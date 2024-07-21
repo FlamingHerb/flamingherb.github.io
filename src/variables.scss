@@ -1,8 +1,8 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
 /* Global Styles */
 
-$border-color: #dcbb57;
-$background-color: #018060;
+$border-color: #FFB232;
+$background-color: #009B77;
 $global-max-width: 428px;
 
 :global(p) {
@@ -26,13 +26,13 @@ $global-max-width: 428px;
   }
 
   &:hover {
-    color: white;
+    color: #F05C00;
   }
 }
 
 
 :global(h1, h2, h3){
-  color: #dcbb57;
+  color: $border-color;
   font-family: "Wittgenstein", helvetica, sans-serif;
 }
 
@@ -84,12 +84,20 @@ $global-max-width: 428px;
   align-items: center;
   overflow: hidden;
   //background-color: #ffffff;
+  max-width: 768px;
   
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin: auto;
+  padding: 0 20px;
+
   justify-content: center;
 
 }
+
+:global(hr){
+    color: $border-color;
+    width: 75%;
+}
+
 
 @media only screen and (max-width: 768px) {
   :global(.container) {

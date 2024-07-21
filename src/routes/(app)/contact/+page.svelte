@@ -1,52 +1,41 @@
-<script>
-
-    const d = new Date();
-    let year = d.getFullYear();
-    
-    let authorimg = "/images/witch.png";
-    let caption = "If you're wondering, that ain't me.";
-
-    function handleMouseOver() {
-		authorimg = '/images/pranked.png';
-        caption = "You like kissing boys, don't you?";
-	}
-	function handleMouseOut() {
-		authorimg = '/images/witch.png';
-        caption = "If you're wondering, that ain't me.";
-	}
-
-</script>
-
 <head>
-    <title>About Me | Vaccaria's Website</title>
+    <title>Contact | Vaccaria's Website</title>
 </head>
 
-<div class="container wrapper column-direction">
+<div class="container wrapper column-direction container-section">
     <div class="section">
-        <h1>INTRODUCTION</h1>
-        <figure id="authorimg">
-            <img src="{authorimg}" alt="A witch profile." on:mouseover={handleMouseOver} on:focus={handleMouseOver} on:blur={handleMouseOut} on:mouseout={handleMouseOut}>
-            <figcaption>{caption}</figcaption>
-        </figure>
-        <p>
-            I am Michael Sean Brian B. Omisol. Also known as Vaccaria. I am a {year - 2001} old game/software developer and writer, currently a {year - 2020}rd year BS Computer Science student in the University of the Philippines — Diliman. I have past experience in making games, writing stuff about games, and working with various game devs, including leading a group in the past.
-        </p>
-    </div>
-    <div class="section">
-        <h1>EXPERIENCE</h1>
-        <p>a</p>
+        <div class="border-section sharp-fold">
+            <p style="margin-top: 0">Feel free to contact me through the following platforms:</p>
+            <div class="images-part">
+                <a target="_blank" href="https://www.facebook.com/OmiLomidotexe/">
+                    <img alt="Facebook" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" />
+                </a>
+                <a target="_blank" href="https://github.com/FlamingHerb">
+                    <img alt="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
+                    <img alt="LinkedIn" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" /> 
+                </a>
+            </div>
+            <br>
+            <hr>
+            <p style="margin-top: 2em;">Or directly send me an e-mail at either:</p>
+            <a href="mailto:michaelomisol@protonmail.com">michaelomisol@protonmail.com</a>
+            <a href="mailto:msbbomisol@gmail.com">msbbomisol@gmail.com</a>
+        </div>
     </div>
 </div>
 
 <style lang="scss">
 
+    
     h1 {
         display: block;
         margin-bottom: 0;
     }
 
     p {
-        text-align:justify;
+        text-align: center;
     }
 
     #authorimg {
@@ -61,14 +50,37 @@
     }
 
     .section {
+        display: flex;
+        height: 85vh;
+        //padding: 14px;
         
-        min-width: 85%;
-        max-width: 85%;
-        margin-left: 1.2em;
-        margin-right: 1.2em;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 
-        p {
-            font-size: 1rem;
+    .border-section {
+        position: relative;
+        min-width: 228px;
+        max-width: 300px;
+        padding: 40px 20px;
+        border: 1px solid $border-color;   
+    }
+
+    .images-part {
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        grid-auto-rows: auto;
+        
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        column-gap: 0.5em;
+
+        img {
+            display: inline-grid;
+            width: 50px;
         }
     }
 </style>
