@@ -35,7 +35,10 @@
             Hello, I'm Michael Omisol (but you can either call me Omi or Vaccaria). My fascination with games has led me, first, to creating games at a young age. Sooner enough, that drive for creating led me to be a hobbyist writer as well as my delving into the realm of software development and Computer Science.
         </p>
         <p>
-            I still am active when it comes to making any creative endeavours, though they are more in the backpedal these days in order to focus more in my career. If you <strong>want to work with me</strong>, <a href="/contact">contact me</a>.
+            I still am active when it comes to making any creative endeavours, though they are more in the backpedal these days in order to focus more in my career.
+        </p>
+        <p>
+            If you <strong>want to work with me or want to hire me</strong>, <a href="/contact">please contact me</a> through the following details. 
         </p>
     </div>
 
