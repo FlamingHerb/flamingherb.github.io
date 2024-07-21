@@ -109,9 +109,13 @@
         gap: 50px; 
     }
 
+    /*
+        https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout#grid_lines
+    */
     .skills-tab {
         flex: 1 1 0%;
         min-width: 220px;
+        max-width: 250px;
         margin: auto;
         margin-top: 0;
         justify-content: center;
@@ -123,12 +127,19 @@
             margin-bottom: 1rem;
         }
 
-        img {
-            width: 50px;
-        }
 
         .images-part {
-            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            
+            align-items: center;
+            justify-items: center;
+
+            img {
+                display: inline-grid;
+                width: 50px;
+            }
         }
     }
 
