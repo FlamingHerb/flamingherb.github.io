@@ -102,7 +102,7 @@
     max-width: 500px;
   }
 
-  @media only screen and (max-width: $global-max-width){
+  @media only screen and (max-width: 530px){
     #navbar-comp {
       margin: 25px 1.2rem 0px 1.2rem;
     }
