@@ -39,8 +39,6 @@
 
 <style lang="scss">
 
-    $base-color: #018060;
-    $border-color: #DCBB57;
 
     .subtitle-holder {
         font-size: 14px;
@@ -78,7 +76,7 @@
 
     .sharp-fold {
         position: relative;
-        background: $base-color;
+        background: $background-color;
     
         &:before {
             content: '';
@@ -104,7 +102,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            background: $base-color;
+            background: $background-color;
             width: 2em;
             height: 4em;
         }
