@@ -26,11 +26,11 @@
 	<meta property="og:title" content="Vaccaria's Site" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://flamingherb.github.io/" />
-  <meta property="og:image" content="/images/site_preview.png" />
+  <meta property="og:image" content="/images/site_icon.png" />
   <meta property="og:description" content="A portfolio site made by Vaccaria" />
   <meta name="theme-color" content="#009B77">
 
-  <meta name="twitter:card" content="/images/site_preview.png">
+  <meta name="twitter:card" content="/images/site_icon.png">
 
 </svelte:head>
 
