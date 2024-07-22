@@ -63,13 +63,13 @@
     </div>
     <h2>Works</h2>
     <div class="mini-container row-direction">
-        <figure>
+        <!-- <figure>
             <img class="poster" src="images/works_poster/mtgr.png" alt="Dev8 Website">
             <figcaption>
               <strong>Dev8 Website</strong><br />
               <span>(2024)</span>
             </figcaption>
-        </figure>
+        </figure> -->
         <figure>
             <img class="poster" src="images/works_poster/mtgr.png" alt="Filipino Student Employability Predictor Poster">
             <figcaption>
