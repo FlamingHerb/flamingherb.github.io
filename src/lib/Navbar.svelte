@@ -1,7 +1,8 @@
 <script>
     import { page } from '$app/stores';
+
 </script>
-<div class="pages-section">
+<div class="pages-section {$page.url.pathname === '/' ? '' : 'non-landing-page'} ">
     <!-- Home Link only appears anywhere that isn't the landing page. -->
     {#if $page.url.pathname != "/"}
         <a class="{$page.url.pathname === '/' ? 'current' : ''}" href="/">Home</a>    
@@ -26,4 +27,10 @@
         justify-content: center;
         column-gap: 20px;
     } 
+    .non-landing-page {
+        max-width: 500px;
+        border: 1px solid $border-color;
+        padding: 1em 0.5em;
+        margin: 0px auto 0px auto;
+    }
 </style>

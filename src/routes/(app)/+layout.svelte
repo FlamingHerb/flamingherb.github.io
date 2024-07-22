@@ -38,6 +38,9 @@
   <div id="navbar-comp">
     <Navbar></Navbar>
   </div>
+  <div id="necessary-space">
+
+  </div>
 {/if}
 
 <!-- <svelte:window bind:innerWidth /> -->
@@ -83,6 +86,17 @@
 <style lang="scss">
 
   /* Local Styles */
+  #navbar-comp {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px 40px 0;
+    background: linear-gradient(0deg, rgba(0,155,119,0) 0%, rgba(0,155,119,1) 30%, rgba(0,155,119,1) 100%);
+  }
+
+  #necessary-space{
+    height: 80px;
+  }
 
   .local-header {
     display: flex;
@@ -107,18 +121,13 @@
   }
 
   
-  #navbar-comp {
-    border: 1px solid $border-color;
-    padding: 1em 0.5em;
-    margin: 25px auto 0px auto;
-    max-width: 500px;
-  }
+  
 
-  @media only screen and (max-width: 530px){
-    #navbar-comp {
-      margin: 25px 1.2rem 0px 1.2rem;
-    }
-  }
+  // @media only screen and (max-width: 530px){
+  //   #navbar-comp {
+  //     margin: 0px 1.2rem 0px 1.2rem;
+  //   }
+  // }
 
   #logo {
     margin-left: 1em;
