@@ -26,11 +26,18 @@
         flex-direction: row;
         justify-content: center;
         column-gap: 20px;
+        margin: 0px auto 0px auto;
     } 
     .non-landing-page {
         max-width: 500px;
         border: 1px solid $border-color;
         padding: 1em 0.5em;
         margin: 0px auto 0px auto;
+    }
+
+    @media only screen and (max-width: 530px){
+        .non-landing-page {
+            margin: 0px 1.2rem 0px 1.2rem;
+        }
     }
 </style>
