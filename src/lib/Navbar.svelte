@@ -33,4 +33,9 @@
         padding: 1em 0.5em;
         margin: 0px auto 0px auto;
     }
+    @media only screen and (max-width: 540px){
+        .non-landing-page {
+            margin: 0px 1.2rem 0px 1.2rem;
+        }
+    }
 </style>
