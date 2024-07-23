@@ -1,4 +1,8 @@
 
+<script>
+    import ProjectItem from "$lib/ProjectItem.svelte";
+</script>
+
 <head>
     <title>Works | Vaccaria's Website</title>
 </head>
@@ -10,94 +14,25 @@
     
     <div class="mini-container row-direction">
         <!-- 
-        <figure>
-            <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch 2 Poster">
-            <figcaption>
-              <strong>-repent loci- useless apologies of a troublesome witch 2</strong><br />
-              <span>(TBD)</span>
-            </figcaption>
-        </figure>
-        <figure>
-            <img class="poster" src="images/works_poster/pu.png" alt="Sweet Evil Fantasy Poster">
-            <figcaption>
-              <strong>Sweet Evil Fantasy</strong><br />
-              <span>(WIP)</span>
-            </figcaption>
-        </figure> 
+        <ProjectItem name="Useless Apologies of a Troublesome Witch 2" date="2024" link="https://gamejolt.com/games/uselessapologiesofatroublesomewitch/521869"  image="uaoatw" />
+        <ProjectItem name="Sweet Evil Fantasy"   date="2024" link="" image="pu" /> 
         -->
-        <figure>
-            <a target="_blank" href="https://theredswarm.itch.io/project-privacy">
-                <img class="poster" src="images/works_poster/pv.png" alt="Project Privacy Poster">
-            </a>
-            <figcaption>
-              <strong>Project Privacy</strong><br />
-              <span>(2024)</span>
-            </figcaption>
-        </figure>
-         <figure>
-            <a target="_blank" href="https://github.com/FlamingHerb/Project-Unity">
-                <img class="poster" src="images/works_poster/pu.png" alt="Project Unity Poster">   
-            </a>
-            <figcaption>
-              <strong>Project Unity</strong><br />
-              <span>(2024)</span>
-            </figcaption>
-        </figure>
-        <figure>
-            <a target="_blank" href="https://gamejolt.com/games/uselessapologiesofatroublesomewitch/521869">
-                <img class="poster" src="images/works_poster/uaoatw.png" alt="Useless Apologies of a Troublesome Witch Poster">
-            </a>
-            <figcaption>
-              <strong>-repent loci- useless apologies of a troublesome witch</strong><br />
-              <span>(2020)</span>
-            </figcaption>
-        </figure>
-        <figure>
-            <a target="_blank" href="https://gamejolt.com/games/sailalimnggabi/437232">
-                <img class="poster" src="images/works_poster/sing.png" alt="Sa Ilalim ng Gabi Poster">
-            </a>
-            <figcaption>
-              <strong>Sa Ilalim ng Gabi</strong><br />
-              <span>(2020)</span>
-            </figcaption>
-       </figure>
-        <figure>
-            <a target="_blank" href="https://rpgmaker.net/games/9160/">
-                <img class="poster" src="images/works_poster/tsw.png" alt="The Swallow's Descent Poster">
-            </a>
-            <figcaption>
-              <strong>The Swallow's Descent</strong><br />
-              <span>(2016)</span>
-            </figcaption>
-        </figure>
+
+        <ProjectItem name="Project Privacy" date="2024" link="https://theredswarm.itch.io/project-privacy"  image="pv" />
+        <ProjectItem name="Project Unity"   date="2024" link="https://github.com/FlamingHerb/Project-Unity" image="pu" />
+        <ProjectItem name="Sa Ilalim ng Gabi" date="2020" link="https://gamejolt.com/games/sailalimnggabi/437232"  image="sing" />
+        <ProjectItem name="Useless Apologies of a Troublesome Witch" date="2020" link="https://gamejolt.com/games/uselessapologiesofatroublesomewitch/521869"  image="uaoatw" />
+        <ProjectItem name="The Swallow's Descent" date="2016" link="https://rpgmaker.net/games/9160/"  image="tsw" />
+
     </div>
     <h2>Works</h2>
     <div class="mini-container row-direction">
-        <!-- <figure>
-            <img class="poster" src="images/works_poster/mtgr.png" alt="Dev8 Website">
-            <figcaption>
-              <strong>Dev8 Website</strong><br />
-              <span>(2024)</span>
-            </figcaption>
-        </figure> -->
-        <figure>
-            <a target="_blank" href="https://employability-predictor.streamlit.app/">
-                <img class="poster" src="images/works_poster/mtgr.png" alt="Filipino Student Employability Predictor Poster">
-            </a>
-            <figcaption>
-              <strong>Filipino Student Employability Predictor</strong><br />
-              <span>(2024)</span>
-            </figcaption>
-        </figure>
-        <figure>
-            <a target="_blank" href="https://github.com/FlamingHerb/Multithreaded-GREP-Runner">
-               <img class="poster" src="images/works_poster/mtgr.png" alt="Multithreaded GREP Runner Poster">
-            </a>
-            <figcaption>
-              <strong>Multithreaded GREP Runner</strong><br />
-              <span>(2024)</span>
-            </figcaption>
-       </figure>
+        <!-- 
+        <ProjectItem name="Dev8 Website" date="2025" link=""  image="mtgr" />
+        -->
+        
+        <ProjectItem name="Filipino Student Employability Predictor" date="2024" link="https://employability-predictor.streamlit.app/"  image="fsep" />
+        <ProjectItem name="Multithreaded GREP Runner" date="2023" link="https://github.com/FlamingHerb/Multithreaded-GREP-Runner"  image="mtgr" />
     </div>
 </div>
 
@@ -117,24 +52,35 @@
         column-gap: 20px;
     }
 
-    figure {
+    :global(figure) {
         flex: 1;
         margin: 0.5em 0;
         min-width: 223.2px;
         max-width: 223.2px;
     }
 
-    figcaption {
+    :global(figcaption) {
         margin-top: 0.5em;
         text-align: center;
         font-size: 1em;
 
     }
 
-    .poster {
+    :global(.poster) {
         display: block;
         margin: auto;
         width: 100%;
+    }
+
+
+    @media only screen and (max-width: $global-max-width){
+        :global(figure) {
+            min-width: 150px;
+            max-width: 150px;
+        }
+        :global(figcaption) {
+            font-size: 0.75em;
+        }
     }
 
     .title-holder {
@@ -177,15 +123,7 @@
 
     /* START:   Mobile responsive area! */
 
-    @media only screen and (max-width: $global-max-width){
-        figure {
-            min-width: 150px;
-            max-width: 150px;
-        }
-        figcaption {
-            font-size: 0.75em;
-        }
-    }
+    
 
 
     /* END:     Mobile responsive area! */
