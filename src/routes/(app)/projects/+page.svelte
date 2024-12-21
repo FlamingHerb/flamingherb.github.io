@@ -17,7 +17,8 @@
         <ProjectItem name="Useless Apologies of a Troublesome Witch 2" date="2024" link="https://gamejolt.com/games/uselessapologiesofatroublesomewitch/521869"  image="uaoatw" />
         <ProjectItem name="Sweet Evil Fantasy"   date="2024" link="" image="pu" /> 
         -->
-
+        <ProjectItem name="Lost Voyager: Asteroid Destroyer" date="2024" link="https://flamingherb.github.io/develup-chapter-2-quest/"  image="dvup_ch2" />
+        <ProjectItem name="Ano Po Yun? Yung... Sinig... ang?" date="2024" link="https://flamingherb.github.io/develup-chapter-1-quest/"  image="dvup_ch1" />
         <ProjectItem name="Project Privacy" date="2024" link="https://theredswarm.itch.io/project-privacy"  image="pv" />
         <ProjectItem name="Project Unity"   date="2024" link="https://github.com/FlamingHerb/Project-Unity" image="pu" />
         <ProjectItem name="Sa Ilalim ng Gabi" date="2020" link="https://gamejolt.com/games/sailalimnggabi/437232"  image="sing" />
