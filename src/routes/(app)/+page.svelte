@@ -123,23 +123,23 @@
 
     }
 
-    .pages-section {
-        margin-top: 2.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    // .pages-section {
+    //     margin-top: 2.5rem;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
 
-    .img-cool {
-        margin: auto;
-        margin-top: 3em;
-        max-width: 75%;
-        padding-right: 2em;
-    }
+    // .img-cool {
+    //     margin: auto;
+    //     margin-top: 3em;
+    //     max-width: 75%;
+    //     padding-right: 2em;
+    // }
 
-    .under-construction {
-        font-size: 2rem;
-    }
+    // .under-construction {
+    //     font-size: 2rem;
+    // }
     
     .title-holder {
         font-family: "Wittgenstein";

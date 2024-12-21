@@ -29,25 +29,25 @@
 <style lang="scss">
 
     
-    h1 {
-        display: block;
-        margin-bottom: 0;
-    }
+    // h1 {
+    //     display: block;
+    //     margin-bottom: 0;
+    // }
 
     p {
         text-align: center;
     }
 
-    #authorimg {
-        float: right;
-        margin: 0 0 1.2em 2.4em;
+    // #authorimg {
+    //     float: right;
+    //     margin: 0 0 1.2em 2.4em;
 
-        figcaption {
-            margin:auto;
-            text-align: center;
-            font-size: 0.6rem;
-        }
-    }
+    //     figcaption {
+    //         margin:auto;
+    //         text-align: center;
+    //         font-size: 0.6rem;
+    //     }
+    // }
 
     .section {
         display: flex;

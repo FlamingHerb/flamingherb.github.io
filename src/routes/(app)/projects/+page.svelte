@@ -84,7 +84,7 @@
         }
     }
 
-    .title-holder {
+    h2 {
         font-family: "Wittgenstein";
         font-weight: bold;
         text-align: center;
@@ -93,34 +93,34 @@
         font-size: 1.875rem;
     }
 
-    p {
-        text-align:justify;
-    }
+    // p {
+    //     text-align:justify;
+    // }
 
-    table {
-        border-collapse: collapse;
-        max-width: 80%;
+    // table {
+    //     border-collapse: collapse;
+    //     max-width: 80%;
         
-        tr:nth-child(even) {background-color: #f2f2f2;}
+    //     tr:nth-child(even) {background-color: #f2f2f2;}
 
-        h1 {
-            margin-top: 0.25em;
-            font-size: 0.75rem;
+    //     h1 {
+    //         margin-top: 0.25em;
+    //         font-size: 0.75rem;
 
-            a {
-                text-decoration: none;
-            }
-        }
-        p {
-            font-size: 0.5rem;
-        }
+    //         a {
+    //             text-decoration: none;
+    //         }
+    //     }
+    //     p {
+    //         font-size: 0.5rem;
+    //     }
 
-        .description{
-            vertical-align: top;
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
-    }
+    //     .description{
+    //         vertical-align: top;
+    //         padding-left: 0.5em;
+    //         padding-right: 0.5em;
+    //     }
+    // }
 
     /* START:   Mobile responsive area! */
 
