@@ -32,6 +32,7 @@
         <ProjectItem name="Dev8 Website" date="2025" link=""  image="mtgr" />
         -->
         
+        <ProjectItem name="SocketSens" date="2024" link="https://socketsens.vercel.app/"  image="socketsens" />
         <ProjectItem name="Filipino Student Employability Predictor" date="2024" link="https://employability-predictor.streamlit.app/"  image="fsep" />
         <ProjectItem name="Multithreaded GREP Runner" date="2023" link="https://github.com/FlamingHerb/Multithreaded-GREP-Runner"  image="mtgr" />
     </div>
