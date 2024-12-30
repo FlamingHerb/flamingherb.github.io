@@ -48,7 +48,7 @@
 
     .section {
         display: flex;
-        height: 100vh;
+        height: 95vh;
         //padding: 14px;
         
         flex-direction: column;

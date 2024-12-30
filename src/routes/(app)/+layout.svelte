@@ -3,6 +3,7 @@
   // import { redirect } from '@sveltejs/kit';
   import { page } from '$app/stores';
   import Navbar from '$lib/Navbar.svelte';
+  import Footer from './Footer.svelte';
 
   // if (PUBLIC_CURRENT_MODE == "development" && $page.url.pathname != "/notallowed") {
   //   throw redirect(307, '/notallowed'); bruh
@@ -82,9 +83,9 @@
 -->
 <slot />
 
+<Footer />
 
 <style lang="scss">
-
   /* Local Styles */
   #navbar-comp {
     position: fixed;
@@ -98,27 +99,27 @@
     height: 80px;
   }
 
-  .local-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #ffffff;
-    margin: auto;
-    justify-content: space-between;
+  // .local-header {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   background-color: #ffffff;
+  //   margin: auto;
+  //   justify-content: space-between;
     
 
-    //border: 2px solid #303030;
-    //border-top: 0;
+  //   //border: 2px solid #303030;
+  //   //border-top: 0;
 
-    //padding-bottom: 2em;
-  }
+  //   //padding-bottom: 2em;
+  // }
 
-  .header {
-    display: flex;
-    align-items: center;
-    padding-bottom: 0;
-  }
+  // .header {
+  //   display: flex;
+  //   align-items: center;
+  //   padding-bottom: 0;
+  // }
 
   
   
@@ -129,20 +130,20 @@
   //   }
   // }
 
-  #logo {
-    margin-left: 1em;
-    margin-right: 0.5em;
-    height: 102px;
-  }
+  // #logo {
+  //   margin-left: 1em;
+  //   margin-right: 0.5em;
+  //   height: 102px;
+  // }
 
-  #leftside {
-    margin-left: 1em;
-  }
+  // #leftside {
+  //   margin-left: 1em;
+  // }
 
-  #medialinks {
-    display: inline-flex;
-    gap: 5px;
-  }
+  // #medialinks {
+  //   display: inline-flex;
+  //   gap: 5px;
+  // }
 
 
 
@@ -154,28 +155,28 @@
   }
   */
 
-  #placeholder {
-    font-family: 'Eastman Alternate Trial Medium', sans-serif;
-    letter-spacing: 0.05em;
-    display: inline-flex;
-    margin-block-start: 0.4em;
-    //margin-left: 0.4em;
-    margin-right: 0.2em;
+  // #placeholder {
+  //   font-family: 'Eastman Alternate Trial Medium', sans-serif;
+  //   letter-spacing: 0.05em;
+  //   display: inline-flex;
+  //   margin-block-start: 0.4em;
+  //   //margin-left: 0.4em;
+  //   margin-right: 0.2em;
 
-    font-weight: bold;
+  //   font-weight: bold;
 
-    font-size: 3.5rem;
-  }
+  //   font-size: 3.5rem;
+  // }
 
-  #tagline {
+  // #tagline {
     
-    margin-block-start: 0px;
-    margin-block-end: 1.2em;
-    //margin-left: 1.6em;
-    font-style: italic;
+  //   margin-block-start: 0px;
+  //   margin-block-end: 1.2em;
+  //   //margin-left: 1.6em;
+  //   font-style: italic;
 
-    font-size: 0.8rem;
-  }
+  //   font-size: 0.8rem;
+  // }
 
   
 
