@@ -27,8 +27,10 @@
             <img src="{authorimg}" alt="A witch profile." on:mouseover={handleMouseOver} on:focus={handleMouseOver} on:blur={handleMouseOut} on:mouseout={handleMouseOut}>
             <figcaption>{caption}</figcaption>
         </figure>
-        <h1>Michael Omisol</h1>
-        <p style="color: white; text-align: center;">Game Maker, Software/Web Developer, Creative Writer</p>
+        <div class="other-block">
+            <h1>Michael Omisol</h1>
+            <p class="subtitle">Game Maker, Software/Web Developer, Creative Writer</p>
+        </div>
     </div>
     <div class="section">
         <p>
@@ -95,10 +97,22 @@
         text-align: justify;
     }
 
+    .subtitle {
+        font-style: italic;
+        text-align: center;
+    }
+
+    .other-block {
+        margin: 3em 0 1.2em 1.2em;
+    }
+
     #authorimg {
         float: right;
-        margin: 0 0 1.2em 2.4em;
+        margin: 0 1.2em 1.2em 1.2em;
 
+        img {
+            text-align: center;
+        }
         figcaption {
             margin:auto;
             text-align: center;
@@ -148,6 +162,10 @@
 
     .forced-top {
         margin-top: 20px;
+
+        h1 {
+            margin-bottom: -0.5em;
+        }
     }
 
     .section {
@@ -163,8 +181,12 @@
     @media only screen and (max-width: 537px){
         #authorimg {
             float: none;
-            margin: auto;
+            margin: 0 0 -2em 0;
             text-align: center;
+        }
+        .other-block {
+            margin: auto;
+            margin-top: 3em;
         }
     }
 </style>
