@@ -130,6 +130,7 @@
         https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout#grid_lines
     */
     .skills-tab {
+       
         flex: 1 1 0%;
         min-width: 220px;
         max-width: 250px;
@@ -145,6 +146,7 @@
         }
 
 
+
         .images-part {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -156,9 +158,11 @@
             img {
                 display: inline-grid;
                 width: 50px;
+                filter: drop-shadow(0px 0px 2px black);
             }
         }
     }
+
 
     .forced-top {
         margin-top: 20px;
