@@ -3,8 +3,8 @@
     const d = new Date();
     let year = d.getFullYear();
     
-    let authorimg = "/images/witch.png";
-    let caption = "If you're wondering, that ain't me.";
+    let authorimg = $state("/images/witch.png");
+    let caption = $state("If you're wondering, that ain't me.");
 
     function handleMouseOver() {
 		authorimg = '/images/pranked.png';
@@ -24,7 +24,7 @@
 <div class="container wrapper column-direction" style="margin-bottom: 4rem;">
     <div class="section forced-top">
         <figure id="authorimg">
-            <img src="{authorimg}" alt="A witch profile." on:mouseover={handleMouseOver} on:focus={handleMouseOver} on:blur={handleMouseOut} on:mouseout={handleMouseOut}>
+            <img src="{authorimg}" alt="A witch profile." onmouseover={handleMouseOver} onfocus={handleMouseOver} onblur={handleMouseOut} onmouseout={handleMouseOut}>
             <figcaption>{caption}</figcaption>
         </figure>
         <div class="other-block">

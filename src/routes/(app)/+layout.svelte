@@ -1,11 +1,18 @@
 <script>
   // import { PUBLIC_CURRENT_MODE } from '$env/static/public';
   // import { redirect } from '@sveltejs/kit';
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import Navbar from '$lib/Navbar.svelte';
   import Footer from './Footer.svelte';
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
 
-  // if (PUBLIC_CURRENT_MODE == "development" && $page.url.pathname != "/notallowed") {
+  /** @type {Props} */
+  let { children } = $props();
+
+  // if (PUBLIC_CURRENT_MODE == "development" && page.url.pathname != "/notallowed") {
   //   throw redirect(307, '/notallowed'); bruh
   // }
 
@@ -35,7 +42,7 @@
 
 </svelte:head>
 
-{#if ($page.url.pathname != "/")}
+{#if (page.url.pathname != "/")}
   <div id="navbar-comp">
     <Navbar></Navbar>
   </div>
@@ -72,16 +79,16 @@
     <img id="logo" src="/images/fa.webp" alt="segs">
   </div>
   <div class="nav">
-    <a class="{$page.route.id === '/' ? 'current' : ''}" href="/">HOME</a>
-    <a class="{$page.route.id === '/works' ? 'current' : ''}" href="/works">WORKS</a>
-    <a class="{$page.route.id === '/blog' ? 'current' : ''}" href="/blog">BLOG</a>
-    <a class="{$page.route.id === '/aboutme' ? 'current' : ''}" href="/aboutme">ABOUT ME</a>
-    <a class="{$page.route.id === '/contact' ? 'current' : ''}" href="/contact">CONTACT ME</a>
+    <a class="{page.route.id === '/' ? 'current' : ''}" href="/">HOME</a>
+    <a class="{page.route.id === '/works' ? 'current' : ''}" href="/works">WORKS</a>
+    <a class="{page.route.id === '/blog' ? 'current' : ''}" href="/blog">BLOG</a>
+    <a class="{page.route.id === '/aboutme' ? 'current' : ''}" href="/aboutme">ABOUT ME</a>
+    <a class="{page.route.id === '/contact' ? 'current' : ''}" href="/contact">CONTACT ME</a>
   </div>
 
 </div>
 -->
-<slot />
+{@render children?.()}
 
 <Footer />
 

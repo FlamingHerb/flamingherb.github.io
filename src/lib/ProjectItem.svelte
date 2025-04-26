@@ -1,8 +1,10 @@
 <script>
-    export let name;
-    export let date;
-    export let link;
-    export let image;
+    let {
+        name,
+        date,
+        link,
+        image
+    } = $props();
 </script>
 
 <figure>
