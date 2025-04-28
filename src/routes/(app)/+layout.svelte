@@ -1,6 +1,7 @@
 <script>
   // import { PUBLIC_CURRENT_MODE } from '$env/static/public';
   // import { redirect } from '@sveltejs/kit';
+  import "../../app.css";
   import { page } from '$app/state';
   import Navbar from '$lib/Navbar.svelte';
   import Footer from './Footer.svelte';
@@ -11,7 +12,6 @@
 
   /** @type {Props} */
   let { children } = $props();
-  import "../app.css";
 
   // if (PUBLIC_CURRENT_MODE == "development" && page.url.pathname != "/notallowed") {
   //   throw redirect(307, '/notallowed'); bruh
@@ -44,11 +44,8 @@
 </svelte:head>
 
 {#if (page.url.pathname != "/")}
-  <div id="navbar-comp">
+  <div id="navbar-comp" class="sticky top-0 w-full m-auto pt-5 pb-10 px-0">
     <Navbar></Navbar>
-  </div>
-  <div id="necessary-space">
-
   </div>
 {/if}
 
@@ -93,102 +90,10 @@
 
 <Footer />
 
-<style lang="scss">
+<style lang="postcss">
   /* Local Styles */
+  @reference "tailwindcss";
   #navbar-comp {
-    position: fixed;
-    width: 100%;
-    margin: auto;
-    padding: 20px 0px 40px 0;
     background: linear-gradient(0deg, rgba(0,155,119,0) 0%, rgba(0,155,119,1) 30%, rgba(0,155,119,1) 100%);
   }
-
-  #necessary-space{
-    height: 80px;
-  }
-
-  // .local-header {
-  //   display: flex;
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   background-color: #ffffff;
-  //   margin: auto;
-  //   justify-content: space-between;
-    
-
-  //   //border: 2px solid #303030;
-  //   //border-top: 0;
-
-  //   //padding-bottom: 2em;
-  // }
-
-  // .header {
-  //   display: flex;
-  //   align-items: center;
-  //   padding-bottom: 0;
-  // }
-
-  
-  
-
-  // @media only screen and (max-width: 530px){
-  //   #navbar-comp {
-  //     margin: 0px 1.2rem 0px 1.2rem;
-  //   }
-  // }
-
-  // #logo {
-  //   margin-left: 1em;
-  //   margin-right: 0.5em;
-  //   height: 102px;
-  // }
-
-  // #leftside {
-  //   margin-left: 1em;
-  // }
-
-  // #medialinks {
-  //   display: inline-flex;
-  //   gap: 5px;
-  // }
-
-
-
-  /*
-  @media only screen and (max-width: 520px) {
-    #logo {
-        display: none;
-    }
-  }
-  */
-
-  // #placeholder {
-  //   font-family: 'Eastman Alternate Trial Medium', sans-serif;
-  //   letter-spacing: 0.05em;
-  //   display: inline-flex;
-  //   margin-block-start: 0.4em;
-  //   //margin-left: 0.4em;
-  //   margin-right: 0.2em;
-
-  //   font-weight: bold;
-
-  //   font-size: 3.5rem;
-  // }
-
-  // #tagline {
-    
-  //   margin-block-start: 0px;
-  //   margin-block-end: 1.2em;
-  //   //margin-left: 1.6em;
-  //   font-style: italic;
-
-  //   font-size: 0.8rem;
-  // }
-
-  
-
-  
-
-  
 </style>
