@@ -9,16 +9,3 @@
     </center>
 </div>
 
-
-<style lang="scss">
-    h1 {
-        font-size: 2rem;
-    }
-    img {
-        max-width: 60%;
-    }
-
-    div {
-        padding: 1em 0px;
-    }
-</style>

@@ -10,12 +10,12 @@ export default defineConfig({
     sveltekit()
   ],
 
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-        additionalData: '@use "$lib/variables.scss" as *;',
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       api: 'modern-compiler',
+  //       additionalData: '@use "$lib/variables.scss" as *;',
+  //     },
+  //   },
+  // },
 });

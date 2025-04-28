@@ -2,8 +2,9 @@
   // import { PUBLIC_CURRENT_MODE } from '$env/static/public';
   // import { redirect } from '@sveltejs/kit';
   import "../../app.css";
-  import { page } from '$app/state';
-  import Navbar from '$lib/Navbar.svelte';
+
+
+  import Header from './Header.svelte';
   import Footer from './Footer.svelte';
   /**
    * @typedef {Object} Props
@@ -40,15 +41,10 @@
   <meta name="theme-color" content="#009B77">
 
   <meta name="twitter:card" content="/images/site_icon.png">
-
 </svelte:head>
 
-{#if (page.url.pathname != "/")}
-  <div id="navbar-comp" class="sticky top-0 w-full m-auto pt-5 pb-10 px-0">
-    <Navbar></Navbar>
-  </div>
-{/if}
 
+<Header/>
 <!-- <svelte:window bind:innerWidth /> -->
 <!-- 
 <div class="local-header">
