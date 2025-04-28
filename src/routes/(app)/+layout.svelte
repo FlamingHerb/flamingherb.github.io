@@ -11,6 +11,7 @@
 
   /** @type {Props} */
   let { children } = $props();
+  import "../app.css";
 
   // if (PUBLIC_CURRENT_MODE == "development" && page.url.pathname != "/notallowed") {
   //   throw redirect(307, '/notallowed'); bruh
