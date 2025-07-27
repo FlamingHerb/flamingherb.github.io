@@ -17,7 +17,7 @@
         <ProjectItem name="Sweet Evil Fantasy"   date="2024" link="" image="pu" /> 
         -->
         <ProjectItem name="Watermarked" date="2025" link="https://aljowo.itch.io/watermarked"  image="mom" />
-        <ProjectItem name="Peek-A-Boo (Red Velvet Fangame)" date="2025" link="https://vaccaria.itch.io/peek-a-boo"  image="rvh" />
+        <ProjectItem name="Peek-A-Boo <br><small>(Red Velvet Fangame)</small>" date="2025" link="https://vaccaria.itch.io/peek-a-boo"  image="rvh" />
         <ProjectItem name="Lost Voyager: Asteroid Destroyer" date="2024" link="https://flamingherb.github.io/develup-chapter-2-quest/"  image="dvup_ch2" />
         <ProjectItem name="Ano Po Yun? Yung... Sinig... ang?" date="2024" link="https://flamingherb.github.io/develup-chapter-1-quest/"  image="dvup_ch1" />
         <ProjectItem name="Project Privacy" date="2024" link="https://theredswarm.itch.io/project-privacy"  image="pv" />
