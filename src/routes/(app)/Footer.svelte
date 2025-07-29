@@ -1,24 +1,8 @@
-<footer>
+<footer class="text-[#004e3c] text-center">
     <!-- TODO: Add in buttons here. -->
-    <p>&copy; 2025 <a href="/">Michael Sean Brian B. Omisol</a>.</p>
+    <small>&copy; 2025 
+        <a href="/">
+            Michael Sean Brian B. Omisol
+        </a>.
+    </small>
 </footer>
-
-<style lang="scss">
-    footer {
-        text-align: center;
-        
-        p {
-            color: #C0C0C0;
-            font-size: 12px;
-        }
-        a {
-            font-weight: normal;
-            color: #C0C0C0;
-            font-size: 12px;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-</style>

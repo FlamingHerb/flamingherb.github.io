@@ -1,170 +1,64 @@
 <script>
-  import Navbar from "../../lib/Navbar.svelte";
+    import Navbar from "./Navbar.svelte";
+    import taglines from "$lib/taglines.json"
 
     const d = new Date();
     let year = d.getFullYear();
-    let authorimg = "/images/witch.png";
+
+    const redir = [
+        {
+            title: "Github",
+            link: "https://github.com/FlamingHerb",
+            image: "images/icons/github.svg"
+        },
+        {
+            title: "LinkedIn",
+            link: "https://www.linkedin.com/in/msbbomisol/",
+            image: "images/icons/linkedin.svg"
+        },
+        {
+            title: "Itch.io",
+            link: "https://vaccaria.itch.io/",
+            image: "images/icons/itchio.svg"
+        }
+    ];
+
+    const num = Math.floor(Math.random() * (taglines.length))
+
+    let tagline_used = $derived(taglines[num])
 </script>
 
 <head>
     <title>Vaccaria's Website</title>
 </head>
 
-<div class="container wrapper rrow-direction">
-    <div class="section">
-        <div class="border-section sharp-fold">
+<div class="flex w-full h-[95vh] flex-col justify-center">
+    <div class="mx-auto min-w-[228px] max-w-[320px]  py-[40px] px-[20px] border border-[#ffb232]">
             <!-- Introduction -->
-            <p class="subtitle-holder">Hi, I'm...</p>
-            <h1 class="title-holder">Vaccaria</h1>
-            <p class="subtitle-holder">dev, game maker, writer, learner.</p>
+            <p class="text-center text-white text-sm">Hi, I'm...</p>
+            <h1 class="text-center my-[5px]">Vaccaria</h1>
+            <p class="text-center text-white text-sm italic">dev, game maker, writer, learner.</p>
             
             <!-- Social Media Links -->
-            <div class="links-section">
-                <a target="_blank" href="https://github.com/FlamingHerb">
-                    <img src="images/icons/github.svg" alt="Github Redirect">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/msbbomisol/">
-                    <img src="images/icons/linkedin.svg" alt="LinkedIn Redirect">
-                </a>
-                <a target="_blank" href="https://vaccaria.itch.io/">
-                    <img src="images/icons/itchio.svg" alt="Itch.io Redirect">
-                </a>
+            <div class="flex flex-row justify-center gap-x-[28px] mt-[28px] mb-[14px]">
+                {#each redir as linker }
+                    <a target="_blank" href="{linker.link}">
+                        <img 
+                            class="w-[32px]" 
+                            style="filter: brightness(0) saturate(100%) invert(93%) sepia(80%) saturate(6894%) hue-rotate(314deg) brightness(91%) contrast(88%);"
+                            src="{linker.image}" 
+                            alt="{linker.title} Redirect">
+                    </a>
+                {/each}
             </div>
             <!-- Important Works -->
             <Navbar></Navbar>
+
+            <hr class="h-px my-4 border-0 bg-[#ffb232]">
+
+            <!-- Tagline -->
+            <p class="text-gray-300 text-xs text-center italic">
+                {tagline_used}
+            </p>
         </div>
-    </div>
-
 </div>
-
-<style lang="scss">
-
-
-    .subtitle-holder {
-        font-size: 14px;
-        color: white;
-        text-align: center;
-    }
-
-    .section {
-        display: flex;
-        height: 95vh;
-        //padding: 14px;
-        
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .border-section {
-        position: relative;
-        width: 228px;
-        height: 249px;
-        padding: 37px;
-        border: 1px solid $border-color;
-        
-        
-    }
-    
-
-    /* 60-degree folded corner */
-    // https://codepen.io/yowlonglee/pen/eQZoWv?editors=1100
-
-    // https://www.steckinsights.com/shorten-length-border-bottom-pure-css/
-
-
-    
-
-    .sharp-fold {
-        position: relative;
-        background: $background-color;
-    
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) no-repeat 100% 0;
-            width: 1.73em;
-            height: 3em;
-            transform: translateY(-1.3em) rotate(-30deg);
-            transform-origin: bottom right;
-            border-bottom-left-radius: inherit;
-            box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
-
-            border-bottom: 1px solid $border-color;
-            border-left: 1px solid $border-color;
-        }
-
-        &:after {
-            content: '';
-            transform: translateX(1.4em) translateY(-3.9em) rotate(-61deg);
-            transform-origin: bottom right;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: $background-color;
-            width: 2em;
-            height: 4em;
-        }
-    }
-
-    .links-section {
-        
-        margin: 28px 14px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        img {
-            width: 2rem;
-            filter: brightness(0) saturate(100%) invert(93%) sepia(80%) saturate(6894%) hue-rotate(314deg) brightness(91%) contrast(88%);
-        }
-
-    }
-
-    // .pages-section {
-    //     margin-top: 2.5rem;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-around;
-    // }
-
-    // .img-cool {
-    //     margin: auto;
-    //     margin-top: 3em;
-    //     max-width: 75%;
-    //     padding-right: 2em;
-    // }
-
-    // .under-construction {
-    //     font-size: 2rem;
-    // }
-    
-    .title-holder {
-        font-family: "Wittgenstein";
-        font-weight: bold;
-        text-align: center;
-        color: #DCBB57;
-
-        margin: 0;
-
-    }
-
-
-
-    // The weird Hero CSS shit they do that just works.
-
-    
-
-
- 
-     /*
- 
-     
-     @media only screen and (max-width: 976px) {
-      .title-holder {
-
-    */
-
-</style>
