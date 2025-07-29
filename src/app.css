@@ -26,7 +26,7 @@
     }
 
     h2 {
-        @apply text-xl sm:text-2xl text-white;
+        @apply text-white;
     }
 
     h3 {
@@ -37,7 +37,7 @@
         @apply text-base sm:text-lg;
     }
     p {
-        @apply text-justify not-sm:text-sm font-roboto;
+        @apply not-sm:text-sm font-montserrat;
     }
     ul {
         @apply text-justify not-sm:text-sm font-roboto;
