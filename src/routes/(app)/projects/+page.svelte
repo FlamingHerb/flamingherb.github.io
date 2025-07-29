@@ -7,7 +7,7 @@
     <title>Works | Vaccaria's Website</title>
 </head>
 
-<div class="w-full column-direction" style="margin-bottom: 4rem;">
+<div class="w-full column-direction mb-[80px] mt-[132px]">
     <h1 class="text-center mt-[10px] mb-[40px]">
         Projects
     </h1>

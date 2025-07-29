@@ -108,7 +108,7 @@
     <title>About Me | Vaccaria's Website</title>
 </head>
 
-<div class="w-full mb-[40px]">
+<div class="w-full mb-[80px] mt-[132px]">
     <div class="w-[300px] md:w-[768px] grid grid-cols-1 md:grid-cols-[30%_70%] gap-y-3 mx-auto items-center mb-[20px]">
         <figure>
             <img 
