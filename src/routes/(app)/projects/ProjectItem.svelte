@@ -12,7 +12,7 @@
         <img class="poster" src="images/works_poster/{image}.png" alt="{name} Poster">
     </a>
     <figcaption>
-        <strong>{name}</strong><br/>
+        <strong>{@html name}</strong><br/>
         <span>({date})</span>
     </figcaption>
 </figure>
