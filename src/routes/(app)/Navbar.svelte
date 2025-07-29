@@ -2,7 +2,9 @@
     import { page } from '$app/stores';
 </script>
 
-<div class="flex flex-row justify-center gap-x-[20px] max-w-[500px] border border-[#ffb232] px-[40px] py-[20px] mx-auto text-[#ffb232] font-bold">
+<div 
+    class="flex flex-row justify-center gap-x-[20px] max-w-[500px]  px-[40px] py-[20px] mx-auto text-[#ffb232] font-bold {$page.url.pathname != '/' ? 'border border-[#ffb232]' : ''}"
+    >
     <!-- Home Link only appears anywhere that isn't the landing page. -->
     {#if $page.url.pathname != "/"}
         <a class="{$page.url.pathname === '/' ? 'text-white underline' : ''}" href="/">Home</a>    

@@ -4,7 +4,7 @@
 </script>
 
 {#if (page.url.pathname != "/")}
-  <div id="navbar-comp" class="fixed top-0 w-full m-auto pt-5 pb-10 px-0 z-20">
+  <div id="navbar-comp" class="fixed top-0 w-full m-auto pt-5 pb-10 px-0 z-20 ">
     <Navbar></Navbar>
   </div>
 {/if}
