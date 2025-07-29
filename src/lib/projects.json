@@ -1,139 +1,147 @@
-{
-    "new_project": {
-        "title": "",
-        "type": "game",
-        "subtitle": "",
-        "date-of-year": "",
-        "image": "",
-        "link": ""
-    },
-    "watermarked": {
+[
+    {
         "title": "Watermarked",
         "type": "game",
         "subtitle": "",
-        "date-of-year": "2025",
+        "date_of_year": "2025",
         "image": "mom.png",
-        "link": "https://aljowo.itch.io/watermarked"
+        "link": "https://aljowo.itch.io/watermarked",
+        "show": true
     },
-    "peekaboo": {
+    {
         "title": "Peek-A-Boo",
         "type": "game",
-        "subtitle": "(Red Velvet Fangame)",
-        "date-of-year": "2025",
+        "subtitle": "Red Velvet Fangame",
+        "date_of_year": "2025",
         "image": "rvh.png",
-        "link": "https://vaccaria.itch.io/peek-a-boo"
+        "link": "https://vaccaria.itch.io/peek-a-boo",
+        "show": true
     },
-    "dvup-ch2": {
+    {
         "title": "Lost Voyager: Asteroid Destroyer",
         "type": "game",
         "subtitle": "",
-        "date-of-year": "2024",
+        "date_of_year": "2024",
         "image": "dvup_ch2.png",
-        "link": "https://flamingherb.github.io/develup-chapter-2-quest/"
+        "link": "https://flamingherb.github.io/develup-chapter-2-quest/",
+        "show": true
     },
-    "dvup-ch1": {
+    {
         "title": "Ano Po Yun? Yung... Sinig... ang?",
         "type": "game",
         "subtitle": "",
-        "date-of-year": "2024",
+        "date_of_year": "2024",
         "image": "dvup_ch1.png",
-        "link": "https://flamingherb.github.io/develup-chapter-1-quest/"
+        "link": "https://flamingherb.github.io/develup-chapter-1-quest/",
+        "show": true
     },
-    "thesis": {
+    {
         "title": "Project Privacy",
         "type": "game",
         "subtitle": "Thesis Game",
-        "date-of-year": "2024",
+        "date_of_year": "2024",
         "image": "pv.png",
-        "link": "https://theredswarm.itch.io/project-privacy"
+        "link": "https://theredswarm.itch.io/project-privacy",
+        "show": true
     },
-    "cs192": {
+    {
         "title": "Project Unity",
         "type": "game",
         "subtitle": "",
-        "date-of-year": "2024",
+        "date_of_year": "2024",
         "image": "pu.png",
-        "link": "https://github.com/FlamingHerb/Project-Unity"
+        "link": "https://github.com/FlamingHerb/Project-Unity",
+        "show": true
     },
-    "sing": {
-        "title": "Sa Ilalim ng Gabi",
-        "type": "game",
-        "subtitle": "",
-        "date-of-year": "2020",
-        "image": "sing.png",
-        "link": "https://vaccaria.itch.io/sa-ilalim-ng-gabi"
-    },
-    "uaoatw": {
+    {
         "title": "Useless Apologies of a Troublesome Witch",
         "type": "game",
         "subtitle": "",
-        "date-of-year": "2020",
+        "date_of_year": "2020",
         "image": "uaoatw.png",
-        "link": "https://vaccaria.itch.io/repent-loci-useless-apologies-of-a-troublesome-witch"
+        "link": "https://vaccaria.itch.io/repent-loci-useless-apologies-of-a-troublesome-witch",
+        "show": true
     },
-    "tsd": {
+    {
+        "title": "Sa Ilalim ng Gabi",
+        "type": "game",
+        "subtitle": "",
+        "date_of_year": "2020",
+        "image": "sing.png",
+        "link": "https://vaccaria.itch.io/sa-ilalim-ng-gabi",
+        "show": true
+    },
+    {
         "title": "The Swallow's Descent",
         "type": "game",
         "subtitle": "",
-        "date-of-year": "2016",
+        "date_of_year": "2016",
         "image": "tsw.png",
-        "link": "https://vaccaria.itch.io/the-swallows-descent"
+        "link": "https://vaccaria.itch.io/the-swallows-descent",
+        "show": true
     },
 
-    "beneath": {
+    {
         "title": "Beneath the Surface",
         "type": "project",
         "subtitle": "CS 132 Portfolio Project",
-        "date-of-year": "2025",
+        "date_of_year": "2025",
         "image": "bts132.png",
-        "link": "https://jcfrongoso.github.io/cs132-final-project/"
+        "link": "https://jcfrongoso.github.io/cs132-final-project/",
+        "show": true
     },
-    "class-monitor": {
+    {
         "title": "Class Monitor",
         "type": "project",
         "subtitle": "Laravel/AWS",
-        "date-of-year": "2025",
+        "date_of_year": "2025",
         "image": "cs173_cm.png",
-        "link": "https://classmonitor.cloud/v2"
+        "link": "https://classmonitor.cloud/v2",
+        "show": true
     },
-    "dev8-site": {
+    {
         "title": "Dev8 Boot 2025 Website",
         "type": "project",
         "subtitle": "",
-        "date-of-year": "2025",
+        "date_of_year": "2025",
         "image": "boot2025.png",
-        "link": "https://dev8.org.ph/events/boot2025/"
+        "link": "https://dev8.org.ph/events/boot2025/",
+        "show": true
     },
-    "socket": {
+    {
         "title": "SocketSens",
         "type": "project",
         "subtitle": "CS145 Computer Networks Capstone",
-        "date-of-year": "2024",
+        "date_of_year": "2024",
         "image": "socketsens.png",
-        "link": "https://socketsens.vercel.app/"
+        "link": "https://socketsens.vercel.app/",
+        "show": true
     },
-    "fsep": {
+    {
         "title": "Filipino Student Employability Predictor",
         "type": "project",
         "subtitle": "CS180 Machine Learning Capstone",
-        "date-of-year": "2024",
+        "date_of_year": "2024",
         "image": "fsep.png",
-        "link": "https://employability-predictor.streamlit.app/"
+        "link": "https://employability-predictor.streamlit.app/",
+        "show": true
     },
-    "cop": {
+    {
         "title": "Cycles of Pain",
         "type": "project",
         "subtitle": "Arts 1 Portfolio",
-        "date-of-year": "2023",
+        "date_of_year": "2023",
         "image": "arts1_proj.png",
-        "link": "https://cycle-of-pain.vercel.app/"
+        "link": "https://cycle-of-pain.vercel.app/",
+        "show": true
     },
-    "multi-grep": {
+    {
         "title": "Multithreaded GREP Runner",
         "type": "project",
         "subtitle": "CS140 Operating Systems Project",
-        "date-of-year": "2023",
+        "date_of_year": "2023",
         "image": "mtgr.png",
-        "link": "https://github.com/FlamingHerb/Multithreaded-GREP-Runner"
+        "link": "https://github.com/FlamingHerb/Multithreaded-GREP-Runner",
+        "show": true
     }
-}
+]

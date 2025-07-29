@@ -2,13 +2,14 @@
     import { page } from '$app/stores';
 </script>
 
-<div class="pages-section {$page.url.pathname === '/' ? '' : 'non-landing-page'} ">
+<div class="flex flex-row justify-center gap-x-[20px] max-w-[500px] border border-[#ffb232] px-[40px] py-[20px] mx-auto text-[#ffb232] font-bold">
     <!-- Home Link only appears anywhere that isn't the landing page. -->
     {#if $page.url.pathname != "/"}
-        <a class="{$page.url.pathname === '/' ? 'current' : ''}" href="/">Home</a>    
+        <a class="{$page.url.pathname === '/' ? 'text-white underline' : ''}" href="/">Home</a>    
     {/if}
     
-    <a class="{$page.url.pathname === '/about' ? 'current' : ''}" href="/about">About</a>
-    <a class="{$page.url.pathname === '/projects' ? 'current' : ''}" href="/projects">Projects</a>
-    <a class="{$page.url.pathname === '/contact' ? 'current' : ''}" href="/contact">Contact</a>
+    <a class="{$page.url.pathname === '/about' ? 'text-white underline' : ''}" href="/about">About</a>
+    <a class="{$page.url.pathname === '/projects' ? 'text-white underline' : ''}" href="/projects">Projects</a>
+    <a class="{$page.url.pathname === '/contact' ? 'text-white underline' : ''}" href="/contact">Contact</a>
 </div>
+

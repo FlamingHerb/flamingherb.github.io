@@ -8,3 +8,11 @@
     <Navbar></Navbar>
   </div>
 {/if}
+
+<style lang="postcss">
+  /* Local Styles */
+  @reference "tailwindcss";
+  #navbar-comp {
+    background: linear-gradient(0deg, rgba(0,155,119,0) 0%, rgba(0,155,119,1) 30%, rgba(0,155,119,1) 100%);
+  }
+</style>
