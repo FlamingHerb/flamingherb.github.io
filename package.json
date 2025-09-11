@@ -15,7 +15,7 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.4",
 		"sass": "^1.89.2",
 		"svelte": "^5.37.3",
-		"vite": "^5.4.19"
+		"vite": "^5.4.20"
 	},
 	"type": "module",
 	"dependencies": {
