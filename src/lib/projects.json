@@ -4,7 +4,7 @@
         "type": "game",
         "subtitle": "Art by <a class='text-[#ffb232]' href='https://x.com/mhiiru_' target='_blank'>@mhiiru_</a>",
         "date_of_year": "2025",
-        "image": "memento.png",
+        "image": "memento.webp",
         "link": "https://octavios-concert-hall.itch.io/memento-solis",
         "show": true
     },
@@ -13,7 +13,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2025",
-        "image": "mom.png",
+        "image": "mom.webp",
         "link": "https://aljowo.itch.io/watermarked",
         "show": true
     },
@@ -22,7 +22,7 @@
         "type": "game",
         "subtitle": "Red Velvet Fangame",
         "date_of_year": "2025",
-        "image": "rvh.png",
+        "image": "rvh.webp",
         "link": "https://vaccaria.itch.io/peek-a-boo",
         "show": true
     },
@@ -31,7 +31,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2024",
-        "image": "dvup_ch2.png",
+        "image": "dvup_ch2.webp",
         "link": "https://flamingherb.github.io/develup-chapter-2-quest/",
         "show": true
     },
@@ -40,7 +40,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2024",
-        "image": "dvup_ch1.png",
+        "image": "dvup_ch1.webp",
         "link": "https://flamingherb.github.io/develup-chapter-1-quest/",
         "show": true
     },
@@ -49,7 +49,7 @@
         "type": "game",
         "subtitle": "Thesis Game",
         "date_of_year": "2024",
-        "image": "pv.png",
+        "image": "pv.webp",
         "link": "https://theredswarm.itch.io/project-privacy",
         "show": true
     },
@@ -58,7 +58,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2024",
-        "image": "pu.png",
+        "image": "pu.webp",
         "link": "https://github.com/FlamingHerb/Project-Unity",
         "show": true
     },
@@ -67,7 +67,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2020",
-        "image": "uaoatw.png",
+        "image": "uaoatw.webp",
         "link": "https://vaccaria.itch.io/repent-loci-useless-apologies-of-a-troublesome-witch",
         "show": true
     },
@@ -76,7 +76,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2020",
-        "image": "sing.png",
+        "image": "sing.webp",
         "link": "https://vaccaria.itch.io/sa-ilalim-ng-gabi",
         "show": true
     },
@@ -85,7 +85,7 @@
         "type": "game",
         "subtitle": "",
         "date_of_year": "2016",
-        "image": "tsw.png",
+        "image": "tsw.webp",
         "link": "https://vaccaria.itch.io/the-swallows-descent",
         "show": true
     },
@@ -95,7 +95,7 @@
         "type": "project",
         "subtitle": "CS 132 Portfolio Project",
         "date_of_year": "2025",
-        "image": "bts132.png",
+        "image": "bts132.webp",
         "link": "https://jcfrongoso.github.io/cs132-final-project/",
         "show": true
     },
@@ -104,7 +104,7 @@
         "type": "project",
         "subtitle": "Laravel/AWS",
         "date_of_year": "2025",
-        "image": "cs173_cm.png",
+        "image": "cs173_cm.webp",
         "link": "https://classmonitor.cloud/v2",
         "show": true
     },
@@ -113,7 +113,7 @@
         "type": "project",
         "subtitle": "",
         "date_of_year": "2025",
-        "image": "boot2025.png",
+        "image": "boot2025.webp",
         "link": "https://dev8.org.ph/events/boot2025/",
         "show": true
     },
@@ -122,7 +122,7 @@
         "type": "project",
         "subtitle": "CS145 Computer Networks Capstone",
         "date_of_year": "2024",
-        "image": "socketsens.png",
+        "image": "socketsens.webp",
         "link": "https://socketsens.vercel.app/",
         "show": true
     },
@@ -131,7 +131,7 @@
         "type": "project",
         "subtitle": "CS180 Machine Learning Capstone",
         "date_of_year": "2024",
-        "image": "fsep.png",
+        "image": "fsep.webp",
         "link": "https://employability-predictor.streamlit.app/",
         "show": true
     },
@@ -140,7 +140,7 @@
         "type": "project",
         "subtitle": "Arts 1 Portfolio",
         "date_of_year": "2023",
-        "image": "arts1_proj.png",
+        "image": "arts1_proj.webp",
         "link": "https://cycle-of-pain.vercel.app/",
         "show": true
     },
@@ -149,7 +149,7 @@
         "type": "project",
         "subtitle": "CS140 Operating Systems Project",
         "date_of_year": "2023",
-        "image": "mtgr.png",
+        "image": "mtgr.webp",
         "link": "https://github.com/FlamingHerb/Multithreaded-GREP-Runner",
         "show": true
     }
