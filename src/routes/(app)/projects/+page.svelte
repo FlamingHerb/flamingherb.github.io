@@ -16,7 +16,7 @@
         Games
     </h2>
     
-    <div class="max-w-[768px] flex flex-row flex-wrap items-stretch justify-center m-auto gap-x-[20px] gap-y-[20px]">
+    <div class="max-w-[996px] flex flex-row flex-wrap items-stretch justify-center m-auto gap-x-[20px] gap-y-[20px]">
         {#each projects as project }
             {#if project.show && project.type == "game"}
                 <ProjectItem
@@ -34,7 +34,7 @@
         Works
     </h2>
     
-    <div class="max-w-[768px] flex flex-row flex-wrap items-stretch justify-center m-auto gap-x-[20px] gap-y-[20px]">
+    <div class="max-w-[996px] flex flex-row flex-wrap items-stretch justify-center m-auto gap-x-[20px] gap-y-[20px]">
         {#each projects as project }
             {#if project.show && project.type == "project"}
                 <ProjectItem
