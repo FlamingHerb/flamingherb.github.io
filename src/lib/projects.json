@@ -1,5 +1,14 @@
 [
     {
+        "title": "Memento Solis",
+        "type": "game",
+        "subtitle": "Art by <a class='text-[#ffb232]' href='https://x.com/mhiiru_' target='_blank'>@mhiiru_</a>",
+        "date_of_year": "2025",
+        "image": "memento.png",
+        "link": "https://octavios-concert-hall.itch.io/memento-solis",
+        "show": true
+    },
+    {
         "title": "Watermarked",
         "type": "game",
         "subtitle": "",

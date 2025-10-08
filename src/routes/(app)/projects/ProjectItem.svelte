@@ -21,7 +21,7 @@
         {#if subtitle != ""}
         <small>
             <em>
-                ({subtitle})
+                ({@html subtitle})
             </em>
         </small>
         <br/>
