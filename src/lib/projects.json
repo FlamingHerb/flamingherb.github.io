@@ -91,6 +91,24 @@
     },
 
     {
+        "title": "Grand ARMIS Masquarade",
+        "type": "project",
+        "subtitle": "EDS ARMIS Anniversary Website (art by <a class='text-[#ffb232]' href='https://x.com/Mr_R1tZ_21' target='_blank'>@Mr_R1tZ_21</a>)",
+        "date_of_year": "2025",
+        "image": "armis2025.webp",
+        "link": "https://armis-anniversary-2025.vercel.app/",
+        "show": true
+    },
+    {
+        "title": "Pilipinuts 2024",
+        "type": "project",
+        "subtitle": "CS 132 Class Capstone Project",
+        "date_of_year": "2025",
+        "image": "nuts2024.webp",
+        "link": "https://pilipinuts-2024.vercel.app/",
+        "show": true
+    },
+    {
         "title": "Beneath the Surface",
         "type": "project",
         "subtitle": "CS 132 Portfolio Project",

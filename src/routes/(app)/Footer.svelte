@@ -2,7 +2,7 @@
     <!-- TODO: Add in buttons here. -->
     <small>&copy; 2025 
         <a href="/">
-            Michael Sean Brian B. Omisol
+            Vaccaria
         </a>.
     </small>
 </footer>
