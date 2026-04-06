@@ -49,12 +49,16 @@
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
         },
         {
-            lang: "TS ",
+            lang: "TS",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
         },
         {
-            lang: "PHP ",
+            lang: "PHP",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+        },
+        {
+            lang: "YAML",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yaml/yaml-original.svg"
         }
     ];
     const lib_frame = [
@@ -67,14 +71,42 @@
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
         }, 
         {
+            lang: "Tailwind",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+        }, 
+        {
             lang: "MySQL",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-        }
+        },
+        {
+            lang: "Vue",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+        },
+        {
+            lang: "React",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        },
+        {
+            lang: "React Router",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
+        },
+        {
+            lang: "Laravel",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+        },
+        {
+            lang: "Liquid",
+            icon: "/images/icons/liquid.svg"
+        },
     ];
     const tech_eng = [
         {
             lang: "Godot",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
+        },
+        {
+            lang: "Renpy",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/renpy/renpy-original.svg"
         },
         {
             lang: "Git",
@@ -89,8 +121,24 @@
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
         },
         {
+            lang: "GitHub Actions",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+        },
+        {
             lang: "Bitbucket",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg"
+        },
+        {
+            lang: "AWS",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+        },
+        {
+            lang: "Vercel",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg"
+        },
+        {
+            lang: "Netlify",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
         },
         {
             lang: "NodeJS",
@@ -99,6 +147,22 @@
         {
             lang: "pnpm",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original.svg"
+        },
+        {
+            lang: "Shopify",
+            icon: "/images/icons/shopify.svg"
+        },
+        {
+            lang: "WordPress",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg"
+        },
+        {
+            lang: "Webflow",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg"
+        },
+        {
+            lang: "Docker",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
         },
     ]
 
