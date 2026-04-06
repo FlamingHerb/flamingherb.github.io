@@ -100,6 +100,15 @@
     },
 
     {
+        "title": "Octavio's Album Collection",
+        "type": "project",
+        "subtitle": "EDS Octavio 2026 BDAY Website (art by <a class='text-[#ffb232]' href='https://twitter.com/Claramell21' target='_blank'>@claramell21</a> and <a class='text-[#ffb232]' href='https://twitter.com/Freshoutdawater' target='_blank'>@KoiCorp</a>)",
+        "date_of_year": "2026",
+        "image": "oac_2026.webp",
+        "link": "https://octavio-birthday-2026.vercel.app/",
+        "show": true
+    },
+    {
         "title": "Grand ARMIS Masquarade",
         "type": "project",
         "subtitle": "EDS ARMIS Anniversary Website (art by <a class='text-[#ffb232]' href='https://x.com/Mr_R1tZ_21' target='_blank'>@Mr_R1tZ_21</a>)",
