@@ -118,6 +118,15 @@
         "show": true
     },
     {
+        "title": "Ren'Py to Itch",
+        "type": "project",
+        "subtitle": "Docker image for Ren'Py to publish to Itch.io",
+        "date_of_year": "2025",
+        "image": "ren-py-to-itch.webp",
+        "link": "https://github.com/FlamingHerb/renpy-to-itch/pkgs/container/renpy-to-itch",
+        "show": true
+    },
+    {
         "title": "Pilipinuts 2024",
         "type": "project",
         "subtitle": "CS 132 Class Capstone Project",
